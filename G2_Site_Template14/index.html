@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Broker Spick - Independent Financial Education</title>
+    <meta name="description"
+        content="Smart Broker Spick is an independent educational platform focused on improving financial literacy and long-term financial awareness.">
+   <link rel="icon" href="./wp-content/uploads/2025/10/cropped-lololo-32x32.png" sizes="32x32" />    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Cormorant Garamond', serif; }
+    </style>
+</head>
+
+<body class="bg-[#FDFCF8] text-[#1A1A1A] font-sans">
+
+    <!-- Header -->
+    <header class="py-8 px-8 md:px-32">
+        <div class="flex justify-center items-center">
+            <div class="flex items-center space-x-4">
+                <!-- Education Logo Icon -->
+                <div class="text-[#A6894A]">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" class="w-8 h-8">
+                        <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                </div>
+                <a href="https://smartbrokerspick.com/" class="font-serif italic text-2xl tracking-wide text-[#1A1A1A]">Smart Broker Spick</a>
+            </div>
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-8 ml-16">
+                <a href="https://smartbrokerspick.com/" class="font-sans text-sm hover:text-[#A6894A] transition duration-1000">Home</a>
+                <a href="https://smartbrokerspick.com/about-us/" class="font-sans text-sm hover:text-[#A6894A] transition duration-1000">About Us</a>
+                <a href="https://smartbrokerspick.com/contact-us/" class="font-sans text-sm hover:text-[#A6894A] transition duration-1000">Contact</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden ml-4" id="mobile-menu-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Nav -->
+        <nav class="md:hidden mt-4 hidden opacity-0 transition-opacity duration-1000" id="mobile-nav">
+            <div class="flex flex-col space-y-2 text-center bg-[#FDFCF8]">
+                <a href="https://smartbrokerspick.com/" class="font-sans text-sm hover:text-[#A6894A] transition duration-1000">Home</a>
+                <a href="https://smartbrokerspick.com/about-us/" class="font-sans text-sm hover:text-[#A6894A] transition duration-1000">About Us</a>
+                <a href="https://smartbrokerspick.com/contact-us/" class="font-sans text-sm hover:text-[#A6894A] transition duration-1000">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Compliance Notice -->
+        <div role="note" aria-label="Informational notice" class="text-center py-4 border-double border-t-2 border-b-2 border-[#A6894A] my-8">
+            <span>ℹ️</span> Independent financial education and informational platform – not a financial institution or advisor.
+        </div>
+
+        <!-- Hero Section -->
+        <div class="text-center py-16 px-8 md:px-32">
+            <h1 class="font-serif italic text-5xl md:text-7xl tracking-wide text-[#1A1A1A] mb-4">
+                <span>Empowering your</span><br>
+                <span>financial future</span>
+            </h1>
+            <div class="w-24 h-px bg-[#A6894A] mx-auto mb-8"></div>
+            <p class="font-sans text-lg max-w-2xl mx-auto mb-8">
+                Smart Broker Spick is your trusted independent platform for financial literacy. We clarify complex money management concepts to help you build valid, long-term wealth strategies.
+            </p>
+            <div class="space-x-4">
+                <a href="#features" class="font-sans text-sm border border-[#A6894A] px-6 py-2 hover:bg-[#A6894A] hover:text-[#FDFCF8] transition duration-1000">Explore Resources</a>
+                <a href="https://smartbrokerspick.com/contact-us/" class="font-sans text-sm border border-[#A6894A] px-6 py-2 hover:bg-[#A6894A] hover:text-[#FDFCF8] transition duration-1000">Contact Us</a>
+            </div>
+        </div>
+
+        <!-- What We Offer Section -->
+        <div id="features" class="py-16 px-8 md:px-32">
+            <div class="text-center mb-12">
+                <h2 class="font-serif italic text-4xl tracking-wide mb-4">What Does Smart Broker Spick Offer?</h2>
+                <p class="font-sans text-lg">Unbiased, research-based information to guide your financial journey.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h3 class="font-serif italic text-2xl tracking-wide mb-4">Comprehensive Education</h3>
+                    <p class="font-sans mb-8">We break down barriers to financial understanding.</p>
+                    <dl class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-[#A6894A] mt-1">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" class="w-6 h-6">
+                                    <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                </svg>
+                            </div>
+                            <div>
+                                <dt class="font-serif italic text-lg">Education Guides</dt>
+                                <dd class="font-sans text-sm">Budgeting basics, saving habits, and investment concepts explained simply. Strictly for learning.</dd>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="text-[#A6894A] mt-1">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" class="w-6 h-6">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <dt class="font-serif italic text-lg">Non-Transactional Learning</dt>
+                                <dd class="font-sans text-sm">Explore how financial concepts work in theory. No sales, no product pushing.</dd>
+                            </div>
+                        </div>
+                    </dl>
+                </div>
+                <div>
+                    <h3 class="font-serif italic text-2xl tracking-wide mb-4">Objective & Future-Focused</h3>
+                    <p class="font-sans mb-8">Planning for tomorrow requires clear thinking today.</p>
+                    <dl class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-[#A6894A] mt-1">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" class="w-6 h-6">
+                                    <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <dt class="font-serif italic text-lg">Independent Insights</dt>
+                                <dd class="font-sans text-sm">Research-based content free from sponsorships. We do not endorse any financial institutions.</dd>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="text-[#A6894A] mt-1">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" class="w-6 h-6">
+                                    <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                                </svg>
+                            </div>
+                            <div>
+                                <dt class="font-serif italic text-lg">Future-Focused</dt>
+                                <dd class="font-sans text-sm">Emphasizing awareness and planning to help you build knowledge that supports thoughtful learning.</dd>
+                            </div>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="py-16 px-8 md:px-32">
+            <div class="text-center mb-12">
+                <h2 class="font-serif italic text-4xl tracking-wide mb-4">Who Is Smart Broker Spick For?</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <h3 class="font-serif italic text-xl tracking-wide mb-2">Students & Beginners</h3>
+                    <p class="font-sans text-sm">Starting their financial literacy journey with foundational concepts and clear guidance.</p>
+                </div>
+                <div class="text-center">
+                    <h3 class="font-serif italic text-xl tracking-wide mb-2">Families</h3>
+                    <p class="font-sans text-sm">Seeking clear, objective education for household money management and long-term security.</p>
+                </div>
+                <div class="text-center">
+                    <h3 class="font-serif italic text-xl tracking-wide mb-2">Entrepreneurs</h3>
+                    <p class="font-sans text-sm">Improving financial awareness to support their professional growth and business stability.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transparency Section -->
+        <div class="py-16 px-8 md:px-32 text-center border-double border-t-2 border-b-2 border-[#A6894A] my-8">
+            <h2 class="font-serif italic text-3xl tracking-wide mb-4">Our Transparency Commitment</h2>
+            <p class="font-sans text-lg max-w-3xl mx-auto mb-6">
+                Smart Broker Spick operates exclusively as an educational and informational resource. We are not a financial advisor, broker, intermediary, or service provider. We do not process transactions, recommend financial products, or provide personalized financial advice.
+            </p>
+            <a href="https://smartbrokerspick.com/about-us/ class="font-sans text-sm border border-[#A6894A] px-6 py-2 hover:bg-[#A6894A] hover:text-[#FDFCF8] transition duration-1000">Read our full disclaimer</a>
+        </div>
+        <div role="note" aria-label="Informational notice" class="text-center py-4 border-double border-t-2 border-b-2 border-[#A6894A] my-8">
+            <span>ℹ️</span> Independent financial education and informational platform – not a financial institution or advisor.
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-16 px-8 md:px-32 bg-[#1A1A1A] text-[#FDFCF8]">
+        <div class="grid md:grid-cols-4 gap-8">
+            <div>
+                <span class="font-serif italic text-lg tracking-wide">SMART B SOLUTIONS INC</span>
+                <p class="font-sans text-sm mt-2">
+                    83-1907779<br>
+                   3782 w 12 ave<br>
+                    hialeah, FL 33012
+                </p>
+            </div>
+            <div>
+                <h3 class="font-serif italic text-lg tracking-wide mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="https://smartbrokerspick.com/" class="font-sans text-sm hover:text-[#A6894A] transition duration-1000">Home</a></li>
+                    <li><a href="https://smartbrokerspick.com/about-us/" class="font-sans text-sm hover:text-[#A6894A] transition duration-1000">About Us</a></li>
+                    <li><a href="https://smartbrokerspick.com/contact-us/" class="font-sans text-sm hover:text-[#A6894A] transition duration-1000">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-serif italic text-lg tracking-wide mb-4">Legal</h3>
+                <ul class="space-y-2">
+                    <li><a href="https://smartbrokerspick.com/privacy-policy/" class="font-sans text-sm hover:text-[#A6894A] transition duration-1000">Privacy Policy</a></li>
+                    <li><a href="https://smartbrokerspick.com/terms-and-conditions/" class="font-sans text-sm hover:text-[#A6894A] transition duration-1000">Terms and Conditions</a></li>
+                    <li><a href="https://smartbrokerspick.com/cookie-policy/" class="font-sans text-sm hover:text-[#A6894A] transition duration-1000">Cookie Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-serif italic text-lg tracking-wide mb-4">Contact</h3>
+                <p class="font-sans text-sm">
+                    Email: <a href="mailto:info@smartbrokerspick.com" class="hover:text-[#A6894A] transition duration-1000">info@smartbrokerspick.com</a><br>
+                    Phone: +1 256 876 6543
+                </p>
+            </div>
+        </div>
+        <div class="mt-12 pt-8 border-t border-[#A6894A]">
+            <div class="text-center mb-4">
+                <p class="font-sans text-sm">
+                    <strong class="font-serif italic">Compliance & Education Notice:</strong> Smart Broker Spick provides educational content and tools only. We do not offer financial products or advice and do not facilitate transactions. Always confirm details with licensed professionals before making financial decisions.
+                </p>
+            </div>
+            <p class="text-center font-sans text-sm">
+                &copy; <script>document.write(new Date().getFullYear())</script> Smart Broker Spick. All rights reserved.
+            </p>
+        </div>
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileNav = document.getElementById('mobile-nav');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileNav.classList.toggle('hidden');
+            mobileNav.classList.toggle('opacity-0');
+            mobileNav.classList.toggle('opacity-100');
+        });
+    </script>
+</body>
+
+</html>

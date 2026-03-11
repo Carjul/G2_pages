@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Global Broker Rank</title>
+  <meta name="description" content="About Global Broker Rank — mission, values, and educational approach.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563EB' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253z'/%3E%3C/svg%3E">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { 'brand-violet': '#7c3aed' },
+          fontFamily: { sans: ['Poppins','ui-sans-serif','system-ui'] }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen flex flex-col bg-gradient-to-b from-white to-rose-50 text-slate-800">
+
+  <!-- Header (intacto) -->
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/60 border-b border-white/40">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-pink-500 to-violet-600 flex items-center justify-center text-white">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253z" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <span class="font-extrabold">Global Broker Rank</span>
+      </a>
+      <nav class="hidden md:flex gap-6">
+        <a href="index.html" class="text-sm font-semibold text-slate-700 hover:text-violet-600">Home</a>
+        <a href="about.html" class="text-sm font-semibold text-slate-900">About</a>
+        <a href="contactme.html" class="text-sm font-semibold text-slate-700 hover:text-violet-600">Contact</a>
+      </nav>
+      <div class="md:hidden">
+        <button id="mobileMenuBtn" aria-expanded="false" aria-controls="mobileMenu" class="p-2 rounded-md focus-ring" aria-label="Open menu">
+          <svg id="menuIcon" class="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu (intacto) -->
+  <div id="mobileMenu" class="md:hidden hidden border-t border-white/30">
+    <div class="px-4 py-3 flex flex-col gap-2">
+      <a href="index.html" class="py-2 px-3 rounded-lg hover:bg-violet-100 text-slate-700">Home</a>
+      <a href="about.html" class="py-2 px-3 rounded-lg hover:bg-violet-100 text-slate-700">About</a>
+      <a href="contactme.html" class="py-2 px-3 rounded-lg hover:bg-violet-100 text-slate-700">Contact</a>
+    </div>
+  </div>
+
+  <!-- Compliance Notice (raiz) -->
+  <div role="note" aria-label="Informational notice" class="mx-auto my-6 max-w-6xl px-6">
+    <div style="background:#f5f7fb;border:1px solid #e1e6f0;border-left:4px solid #6366f1;border-radius:8px;padding:12px 14px;font-weight:500;font-size:14px;line-height:1.5;color:#0f172a;">
+      <span style="display:inline-block;margin-right:8px;">ℹ️</span>
+      Independent educational and informational platform — not a financial institution or regulated advisor.
+    </div>
+  </div>
+
+  <!-- MAIN: contenido del archivo raíz (about_raiz.html) actualizado con el texto solicitado -->
+  <main class="flex-1">
+    <section class="bg-gradient-to-r from-violet-600 to-indigo-600 text-white py-20">
+      <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div>
+          <h1 class="text-4xl font-extrabold">About Us</h1>
+          <p class="mt-3 text-lg">Our mission is to make financial concepts clear, accessible, and easy to understand for everyone.</p>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80" alt="research" class="w-full rounded-xl shadow-lg object-cover h-56">
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 -mt-12">
+      <div class="bg-white rounded-2xl p-8 shadow-lg ring-1 ring-black/5">
+        <!-- Who We Are -->
+        <h2 class="text-2xl font-bold text-violet-600">Who We Are</h2>
+        <div class="mt-4 text-slate-700 space-y-4">
+          <p>Global Broker Rank is an independent educational platform dedicated to improving financial literacy and long-term financial awareness. Our mission is to make financial concepts clear, accessible, and easy to understand—helping individuals, families, and professionals build a stronger understanding of money management and future-focused financial thinking.</p>
+
+          <p>We believe that financial education is essential for developing confidence and awareness over time. That’s why our content is designed to simplify complex financial topics into clear, objective, and easy-to-follow educational materials.</p>
+        </div>
+
+        <!-- What We Do -->
+        <div class="mt-8">
+          <h3 class="text-xl font-semibold text-violet-700">What We Do</h3>
+          <p class="mt-3 text-slate-700">At Global Broker Rank, we provide educational content and informational resources created to support learning—not to promote or facilitate financial services. Our platform includes:</p>
+
+          <ul class="list-disc pl-6 mt-3 text-slate-700 space-y-2">
+            <li><strong>Financial Education Guides</strong> – covering budgeting fundamentals, saving habits, financial awareness, and introductory investment concepts.</li>
+            <li><strong>Informational Learning Resources</strong> – designed to help users explore financial ideas in a general, non-transactional, educational context.</li>
+            <li><strong>Independent Insights</strong> – developed through research and analysis, free from sponsorships, endorsements, or commercial influence.</li>
+            <li><strong>Global Perspective</strong> – offering educational explanations that apply broadly while acknowledging differences across financial systems and regions.</li>
+          </ul>
+        </div>
+
+        <!-- Who We Serve -->
+        <div class="mt-8">
+          <h3 class="text-xl font-semibold text-violet-700">Who We Serve</h3>
+          <ul class="mt-3 list-disc pl-6 text-slate-700 space-y-2">
+            <li>Individuals beginning their financial literacy journey</li>
+            <li>Families seeking clear and objective financial education</li>
+            <li>Students and young adults learning foundational money concepts</li>
+            <li>Freelancers and entrepreneurs wanting general financial awareness</li>
+          </ul>
+        </div>
+
+        <!-- Commitment & Disclaimer -->
+        <div class="mt-8 bg-amber-50 rounded-lg p-4 border-l-4 border-amber-400">
+          <h4 class="font-semibold">Our Commitment to Transparency</h4>
+          <p class="text-sm mt-1 text-slate-700">Global Broker Rank is not a financial advisor, broker, intermediary, or service provider. We do not process transactions, recommend financial products, or provide personalized financial advice. Our role is strictly educational, delivering neutral and research-based information to support responsible financial learning.</p>
+
+          <h4 class="font-semibold mt-4">Disclaimer</h4>
+          <p class="text-sm mt-1 text-slate-700">All tools, resources, and content provided by Global Broker Rank are for educational and informational purposes only. They are not intended to be financial, legal, or investment advice. Users should always consult licensed professionals before making financial decisions.</p>
+        </div>
+
+        <h2 class="text-xl font-bold text-violet-600 mt-8 mb-6">Let’s Connect</h2>
+        <p class="">Questions? Partnerships? Media inquiries?</p>
+        <p>Contact us at <a class="text-violet-600" href="mailto:info@globalbrokerrank.com">info@globalbrokerrank.com</a></p>
+        <p>Phone: +1 256 036 2598</p>
+      </div>
+    </section>
+     <!-- Compliance Notice (raiz) -->
+  <div role="note" aria-label="Informational notice" class="mx-auto my-6 max-w-6xl px-6">
+    <div style="background:#f5f7fb;border:1px solid #e1e6f0;border-left:4px solid #6366f1;border-radius:8px;padding:12px 14px;font-weight:500;font-size:14px;line-height:1.5;color:#0f172a;">
+      <span style="display:inline-block;margin-right:8px;">ℹ️</span>
+      Independent educational and informational platform — not a financial institution or regulated advisor.
+    </div>
+  </div>
+   <br>
+
+  </main>
+
+ <!-- Footer (intacto, legal del raíz preservado) -->
+  <footer class="bg-slate-900 text-slate-200">
+    <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div>
+        <div class="flex items-center gap-3">
+          <div
+            class="w-10 h-10 rounded-lg bg-gradient-to-br from-violet-600 to-indigo-400 flex items-center justify-center text-white">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253z" />
+            </svg>
+          </div>
+          <div>
+            <p class="font-bold">GLOBAL REACH ASSIST LLC</p>
+            <p class="text-xs text-slate-400"> EIN: 85-0497889<br>
+                                              9250 NW 25TH STREET<br>
+                                              DORAL, FL 33172</p>
+          </div>
+        </div>
+               
+      </div>
+
+      <div class="flex gap-6 justify-between md:justify-center">
+        <div>
+          <h5 class="text-sm font-semibold">Links</h5>
+          <ul class="mt-3 space-y-2 text-sm text-slate-400">
+            <li><a href="index.html" class="hover:text-white">Home</a></li>
+            <li><a href="about.html" class="hover:text-white">About</a></li>
+            <li><a href="contactme.html" class="hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="text-sm font-semibold">Legal</h5>
+          <ul class="mt-3 space-y-2 text-sm text-slate-400">
+            <li><a href="privacy.html" class="hover:text-white">Privacy</a></li>
+            <li><a href="terms.html" class="hover:text-white">Terms</a></li>
+            <li><a href="cookies.html" class="hover:text-white">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="text-right md:text-left">
+        <h5 class="text-sm font-semibold mb-3">Contact</h5>
+        <ul class="text-sm text-slate-400">
+         <li>Email: <a  href="mailto:info@globalbrokerrank.com"> info@globalbrokerrank.com</a></li> 
+          <li>Phone: +1 256 036 2598</li>
+        </ul>
+
+        <p class="text-xs text-slate-500 mt-4">&copy; <span id="yr"></span> Global Broker Rank</p>
+         <div class="mt-4 text-xs text-slate-400">
+          <span class="mr-2 font-semibold"> Compliance & Education Notice:</span> Global Broker Rank provides educational content and tools only. We
+          do not offer financial products or advice and do not facilitate transactions. Always confirm details with
+          licensed professionals before making financial decisions.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    const btn = document.getElementById('mobileMenuBtn');
+    const menu = document.getElementById('mobileMenu');
+    btn?.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

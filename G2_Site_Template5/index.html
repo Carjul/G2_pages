@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Move Invest - Independent Financial Education</title>
+    <meta name="description"
+        content="Next Move Invest is an independent educational platform focused on improving financial literacy and long-term financial awareness.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%232563EB' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24'%3E%3Cpath d='M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2z'/%3E%3Cpath d='M9 9h6m-6 4h6m3-8a2 2 0 012 2v2a2 2 0 01-2 2H8a2 2 0 01-2-2V7a2 2 0 012-2z'/%3E%3C/svg%3E">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Fredoka One', cursive;
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, #fbbf24, #ec4899);
+        }
+
+        .btn-hover:hover {
+            transform: rotate(-3deg) scale(1.05);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .geometric-pattern {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="50,0 100,0 50,100 0,100" fill="%23fbbf24" opacity="0.1"/></svg>');
+            background-size: 50px 50px;
+        }
+    </style>
+</head>
+
+<body class="bg-sky-50 text-gray-900">
+
+    <!-- Header -->
+    <header class="bg-white shadow-lg rounded-b-3xl">
+        <div class="max-w-7xl mx-auto px-8 py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <!-- Education Logo Icon -->
+                    <div class="text-amber-400">
+                        <!-- SVG del ícono de alcancía (piggy bank) -->
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-10 h-10">
+                            <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2z" />
+                            <path d="M9 9h6m-6 4h6m3-8a2 2 0 012 2v2a2 2 0 01-2 2H8a2 2 0 01-2-2V7a2 2 0 012-2z" />
+                        </svg>
+                    </div>
+                    <a href="index.html" class="text-2xl font-bold text-gray-900">Next Move Invest</a>
+                </div>
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-900 hover:text-amber-400 transition">Home</a>
+                    <a href="about.html" class="text-gray-900 hover:text-amber-400 transition">About Us</a>
+                    <a href="contact.html" class="text-gray-900 hover:text-amber-400 transition">Contact</a>
+                </nav>
+                <!-- Mobile Nav Button -->
+                <button id="mobile-nav-btn" class="md:hidden text-gray-900">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Nav Menu -->
+            <nav id="mobile-nav" class="hidden md:hidden flex-col space-y-4 mt-4">
+                <a href="index.html" class="text-gray-900 hover:text-amber-400 transition">Home</a>
+                <a href="about.html" class="text-gray-900 hover:text-amber-400 transition">About Us</a>
+                <a href="contact.html" class="text-gray-900 hover:text-amber-400 transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="geometric-pattern">
+
+        <!-- Compliance Notice (Prominent but Integrated) -->
+        <!-- Compliance Notice -->
+        <div role="note" aria-label="Informational notice"
+            class="bg-white border-l-4 border-amber-400 rounded-r-3xl p-6 mx-8 my-6 shadow-xl">
+            <span class="inline-block mr-2 text-amber-400">ℹ️</span> Independent financial education and informational
+            platform – not a financial institution or advisor.
+        </div>
+
+        <!-- Hero Section -->
+        <div
+            class="bg-gradient-to-r from-amber-400 to-fuchsia-500 text-white py-16 px-8 rounded-3xl mx-8 mb-8 shadow-2xl">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2">
+                        <div class="bg-white rounded-3xl p-8 skew-y-2">
+                            <h1
+                                class="text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-fuchsia-500 mb-4">
+                                <span>Empowering your</span>
+                                <span>financial future</span>
+                            </h1>
+                            <p class="text-gray-900 mb-6 text-lg">
+                                Next Move Invest is your trusted independent platform for financial literacy. We
+                                clarify complex money management concepts to help you build valid, long-term wealth
+                                strategies.
+                            </p>
+                            <div class="flex space-x-4">
+                                <a href="#features"
+                                    class="bg-fuchsia-500 text-white px-8 py-4 rounded-full font-bold btn-hover">Explore
+                                    Resources</a>
+                                <a href="contact.html"
+                                    class="bg-white text-gray-900 px-8 py-4 rounded-full font-bold btn-hover">Contact
+                                    Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 mt-8 md:mt-0">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                            alt="Financial education" class="rounded-3xl shadow-xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- What We Offer Section -->
+        <div id="features" class="py-16 px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">What Does Next Move Invest Offer?</h2>
+                    <p class="text-lg text-gray-700">Unbiased, research-based information to guide your financial
+                        journey.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-rose-100 p-8 rounded-3xl feature-card">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Comprehensive Education</h3>
+                        <p class="text-gray-700 mb-6">We break down barriers to financial understanding.</p>
+                        <dl class="space-y-4">
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-amber-400 p-2 rounded-full">
+                                    <!-- Book Icon -->
+                                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        class="w-6 h-6 text-white">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 4.168 6.253v13C4.168 19.977 5.754 18.504 7.5 18.504S10.832 19.977 12 19.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 3.332 1.253v13C19.832 19.977 18.247 18.504 16.5 18.504c-1.747 0-3.332.477-3.332 1.253" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <dt class="font-bold">Education Guides</dt>
+                                    <dd>Budgeting basics, saving habits, and investment concepts explained simply.
+                                        Strictly for learning.</dd>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-fuchsia-500 p-2 rounded-full">
+                                    <!-- Lightbulb Icon -->
+                                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        class="w-6 h-6 text-white">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <dt class="font-bold">Non-Transactional Learning</dt>
+                                    <dd>Explore how financial concepts work in theory. No sales, no product pushing.
+                                    </dd>
+                                </div>
+                            </div>
+                        </dl>
+                    </div>
+                    <div class="bg-sky-100 p-8 rounded-3xl feature-card">
+                        <div class="text-right">
+                            <img width="490"
+                                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                                alt="Learning finance" class="rounded-3xl mb-6">
+                        </div>
+                    </div>
+                    <div class="bg-amber-100 p-8 rounded-3xl feature-card">
+                        <div class="text-left">
+                            <img width="490"
+                                src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                                alt="Data analysis" class="rounded-3xl mb-6">
+                        </div>
+                    </div>
+                    <div class="bg-fuchsia-100 p-8 rounded-3xl feature-card">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Objective & Future-Focused</h3>
+                        <p class="text-gray-700 mb-6">Planning for tomorrow requires clear thinking today.</p>
+                        <dl class="space-y-4">
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-amber-400 p-2 rounded-full">
+                                    <!-- Shield Icon -->
+                                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        class="w-6 h-6 text-white">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <dt class="font-bold">Independent Insights</dt>
+                                    <dd>Research-based content free from sponsorships. We do not endorse any financial
+                                        institutions.</dd>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-fuchsia-500 p-2 rounded-full">
+                                    <!-- Trending Up Icon -->
+                                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        class="w-6 h-6 text-white">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <dt class="font-bold">Future-Focused</dt>
+                                    <dd>Emphasizing awareness and planning to help you build knowledge that supports
+                                        thoughtful learning.</dd>
+                                </div>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Audience Section -->
+        <div class="bg-rose-50 py-16 px-8 rounded-3xl mx-8 mb-8">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Who Is Next Move Invest For?</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-3xl feature-card">
+                        <div class="bg-amber-400 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                            <!-- Student/Education Icon -->
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-8 h-8 text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 14l9-5-9-5-9 5 9 5z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Students & Beginners</h3>
+                        <p class="text-gray-700">Starting their financial literacy journey with foundational concepts
+                            and clear guidance.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl feature-card">
+                        <div class="bg-fuchsia-500 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                            <!-- Family/Group Icon -->
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-8 h-8 text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Families</h3>
+                        <p class="text-gray-700">Seeking clear, objective education for household money management and
+                            long-term security.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl feature-card">
+                        <div class="bg-amber-400 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                            <!-- Briefcase/Business Icon -->
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-8 h-8 text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Entrepreneurs</h3>
+                        <p class="text-gray-700">Improving financial awareness to support their professional growth and
+                            business stability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transparency Section -->
+        <div class="bg-white py-16 px-8 rounded-3xl mx-8 mb-8 shadow-xl">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-8">Our Transparency Commitment</h2>
+            <p class="text-lg text-gray-700 text-center mb-6">
+                Next Move Invest operates exclusively as an educational and informational resource. We are not a
+                financial advisor, broker, intermediary, or service provider. We do not process transactions, recommend
+                financial products, or provide personalized financial advice.
+            </p>
+            <div class="text-center">
+                <a href="about.html" class="bg-amber-400 text-white px-8 py-4 rounded-full font-bold btn-hover">Read our
+                    full disclaimer</a>
+            </div>
+        </div>
+        <div role="note" aria-label="Informational notice"
+            class="bg-fuchsia-100 border-l-4 border-fuchsia-500 rounded-r-3xl p-6 mx-8 mb-8">
+            <span>ℹ️</span> Independent financial education and informational platform – not a financial institution or
+            advisor.
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16 px-8 rounded-t-3xl">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <span class="text-lg font-bold">NEXTINVEST, LLC</span>
+                    <p class="mt-2">65-1133000<br>13601 SW 78TH PLACE<br>MIAMI, FL 33158</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-amber-400 transition">Home</a></li>
+                        <li><a href="about.html" class="hover:text-amber-400 transition">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-amber-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="privacy.html" class="hover:text-amber-400 transition">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-amber-400 transition">Terms and Conditions</a></li>
+                        <li><a href="cookies.html" class="hover:text-amber-400 transition">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <div>
+                        <p>Email: <a href="mailto:info@nextmoveinvest.com"
+                                class="hover:text-amber-400 transition">info@nextmoveinvest.com</a></p>
+                        <p>Phone: +1 087 999 3695</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8">
+                <div>
+                    <p class="text-center mb-4"><strong>Compliance & Education Notice:</strong> Next Move Invest
+                        provides educational content and tools only. We do not offer financial products or advice and do
+                        not facilitate transactions. Always confirm details with licensed professionals before making
+                        financial decisions.</p>
+                </div>
+                <p class="text-center">&copy;
+                    <script>document.write(new Date().getFullYear())</script> Next Move Invest. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile nav toggle
+        document.getElementById('mobile-nav-btn').addEventListener('click', function () {
+            const nav = document.getElementById('mobile-nav');
+            nav.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

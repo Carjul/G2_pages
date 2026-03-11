@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>brokerworldcheck - Independent Financial Education</title>
+    <meta name="description"
+        content="Broker World Check is an independent educational platform focused on improving financial literacy and long-term financial awareness.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237C3AED' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 21h18'/%3E%3Cpath d='M7 16V8'/%3E%3Cpath d='M12 16V4'/%3E%3Cpath d='M17 16V12'/%3E%3C/svg%3E">
+</head>
+
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen font-sans antialiased">
+
+    <!-- Header -->
+    <header class="bg-white/90 backdrop-blur shadow-sm sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 sm:h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <!-- Brand icon -->
+                    <div class="bg-violet-600 text-white p-1.5 rounded-lg">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 21h18M7 16V8M12 16V4M17 16V12" />
+                        </svg>
+                    </div>
+                    <a href="index.html" class="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight font-sans">
+                        Broker World Check
+                    </a>
+                </div>
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-6">
+                    <a href="index.html"
+                        class="text-gray-900 hover:text-violet-600 px-2 sm:px-3 py-2 text-sm font-semibold transition-colors font-sans inline-flex items-center gap-2">
+                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l9-7 9 7" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12v8h14v-8" />
+                        </svg>
+                        Home
+                    </a>
+                    <a href="about.html"
+                        class="text-gray-500 hover:text-violet-600 px-2 sm:px-3 py-2 text-sm font-medium transition-colors font-sans inline-flex items-center gap-2">
+                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <circle cx="12" cy="12" r="9" stroke-width="2"></circle>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 16v-4" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8h.01" />
+                        </svg>
+                        About Us
+                    </a>
+                    <a href="contact.html"
+                        class="text-gray-500 hover:text-violet-600 px-2 sm:px-3 py-2 text-sm font-medium transition-colors font-sans inline-flex items-center gap-2">
+                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        Contact
+                    </a>
+                </nav>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobileMenuBtn" aria-expanded="false" aria-controls="mobileNav"
+                        class="p-2 rounded-md inline-flex items-center justify-center text-gray-700 hover:bg-gray-100">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav (hidden by default) -->
+    <nav id="mobileNav" class="md:hidden hidden bg-white border-b">
+        <div class="px-4 pt-2 pb-4 space-y-1">
+            <a href="index.html"
+                class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 inline-flex items-center gap-2">
+                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l9-7 9 7" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12v8h14v-8" />
+                </svg>
+                Home
+            </a>
+            <a href="about.html"
+                class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 inline-flex items-center gap-2">
+                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <circle cx="12" cy="12" r="9" stroke-width="2"></circle>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 16v-4" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8h.01" />
+                </svg>
+                About Us
+            </a>
+            <a href="contact.html"
+                class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 inline-flex items-center gap-2">
+                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                Contact
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+
+        <!-- Compliance Notice -->
+        <div role="note" aria-label="Informational notice"
+            style="background:#f6f7fc;border:1px solid #e5e7eb;border-left:4px solid #7c3aed;border-radius:8px;padding:12px 14px;margin:16px auto;max-width:72rem;font-weight:500;font-size:14px;line-height:1.5;font-family:system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;color:#0f172a;">
+            <span style="display:inline-block;margin-right:6px;">ℹ️</span> Independent financial education and
+            informational platform – not a financial institution or advisor.
+        </div>
+
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden">
+            <div class="relative bg-gradient-to-br from-violet-900 via-indigo-800 to-sky-700">
+                <!-- subtle grid overlay -->
+                <svg class="absolute inset-0 opacity-10 w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+                            <path d="M32 0H0V32" fill="none" stroke="white" stroke-width="0.5" />
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#grid)" />
+                </svg>
+
+                <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 md:py-28">
+                    <div class="lg:grid lg:grid-cols-2 lg:gap-10 lg:items-center">
+                        <div>
+                            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white">
+                                <span class="block">Empowering your</span>
+                                <span class="block text-fuchsia-200">financial future</span>
+                            </h1>
+                            <p class="mt-4 text-base sm:text-lg md:text-xl text-white/90 max-w-xl font-sans">
+                                Best Broker World is your trusted independent platform for financial literacy. We
+                                clarify complex money management concepts to help you build valid, long-term wealth
+                                strategies.
+                            </p>
+                            <div class="mt-6 flex flex-col sm:flex-row sm:items-center gap-3 font-sans">
+                                <a href="#features"
+                                    class="inline-flex items-center justify-center px-6 py-3 rounded-md bg-white text-violet-700 hover:bg-violet-50 transition text-base font-semibold shadow">
+                                    Explore Resources
+                                </a>
+                                <a href="contact.html"
+                                    class="inline-flex items-center justify-center px-6 py-3 rounded-md border border-white/60 text-white hover:bg-white/10 transition text-base font-semibold">
+                                    Contact
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Hero image: changed to learning environment, not money -->
+                        <div class="mt-10 lg:mt-0">
+                            <div class="relative rounded-xl overflow-hidden ring-1 ring-white/20 shadow-2xl">
+                                <img class="h-56 sm:h-72 md:h-96 w-full object-cover"
+                                    src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                                    alt="Learning environment">
+                                <div class="absolute inset-0 bg-gradient-to-t from-violet-900/20 to-transparent"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- angled divider -->
+                <svg class="block w-full text-slate-50" viewBox="0 0 1440 80" preserveAspectRatio="none"
+                    fill="currentColor">
+                    <path d="M0,64L1440,0L1440,80L0,80Z"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- What We Teach: remove images, show two columns under the title -->
+        <section id="features" class="py-16 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900">What Does Best Broker World Offer?
+                    </h2>
+                    <p class="mt-4 max-w-3xl mx-auto text-lg sm:text-xl text-gray-500 font-sans">
+                        Unbiased, research-based information to guide your financial journey.
+                    </p>
+                </div>
+
+                <!-- Two columns: Objective and future-focused + Comprehensive Education -->
+                <div class="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Objective and future-focused -->
+                    <div class="bg-white rounded-xl ring-1 ring-violet-100 p-6 shadow-sm">
+
+                        <h3 class="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">Objective and
+                            future-focused</h3>
+                        <p class="mt-3 text-lg text-gray-600 font-sans">Planning for tomorrow requires clear thinking
+                            today.</p>
+                        <dl class="mt-8 space-y-8">
+                            <div class="relative">
+                                <dt class="flex items-start">
+                                    <span
+                                        class="flex h-12 w-12 items-center justify-center rounded-md bg-violet-600 text-white shadow">
+                                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 3l8 4v6c0 4.5-4 7.5-8 8-4-0.5-8-3.5-8-8V7l8-4z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4" />
+                                        </svg>
+                                    </span>
+                                    <p class="ml-4 text-lg leading-6 font-medium text-gray-900 font-sans">Independent
+                                        insights</p>
+                                </dt>
+                                <dd class="ml-16 mt-2 text-base text-gray-600 font-sans">
+                                    Research-based content free from sponsorships. We do not endorse any financial
+                                    institutions.
+                                </dd>
+                            </div>
+
+                            <div class="relative">
+                                <dt class="flex items-start">
+                                    <span
+                                        class="flex h-12 w-12 items-center justify-center rounded-md bg-violet-600 text-white shadow">
+                                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M7 17l10-10M17 7h-6M17 7v6" />
+                                        </svg>
+                                    </span>
+                                    <p class="ml-4 text-lg leading-6 font-medium text-gray-900 font-sans">Future-focused
+                                    </p>
+                                </dt>
+                                <dd class="ml-16 mt-2 text-base text-gray-600 font-sans">
+                                    Emphasizing awareness and planning to help you build knowledge that supports
+                                    thoughtful learning.
+                                </dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <!-- Comprehensive Education -->
+                    <div class="bg-white rounded-xl ring-1 ring-violet-100 p-6 shadow-sm">
+                        <h3 class="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">Comprehensive
+                            Education</h3>
+                        <p class="mt-3 text-lg text-gray-600 font-sans">
+                            We break down barriers to financial understanding.
+                        </p>
+                        <dl class="mt-8 space-y-8">
+                            <div class="relative">
+                                <dt class="flex items-start">
+                                    <span
+                                        class="flex h-12 w-12 items-center justify-center rounded-md bg-violet-600  text-white shadow">
+                                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 4h10l4 4v12H5z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M7 8h10M7 12h10M7 16h10" />
+                                        </svg>
+                                    </span>
+                                    <p class="ml-4 text-lg leading-6 font-medium text-gray-900 font-sans">Education
+                                        Guides</p>
+                                </dt>
+                                <dd class="ml-16 mt-2 text-base text-gray-600 font-sans">
+                                    Budgeting basics, saving habits, and investment concepts explained simply. Strictly
+                                    for learning.
+                                </dd>
+                            </div>
+
+                            <div class="relative">
+                                <dt class="flex items-start">
+                                    <span
+                                        class="flex h-12 w-12 items-center justify-center rounded-md bg-violet-600  text-white shadow">
+                                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 3l8 4-8 4-8-4 8-4z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M4 7v6l8 4 8-4V7" />
+                                        </svg>
+                                    </span>
+                                    <p class="ml-4 text-lg leading-6 font-medium text-gray-900 font-sans">
+                                        Non-Transactional Learning</p>
+                                </dt>
+                                <dd class="ml-16 mt-2 text-base text-gray-600 font-sans">
+                                    Explore how financial concepts work in theory. No sales, no product pushing.
+                                </dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Purple two-column section: Who Is Best Broker World For? + Our Transparency Commitment -->
+        <section class="relative overflow-hidden">
+            <div class="bg-gradient-to-br from-violet-900 via-indigo-800 to-sky-700">
+                <svg class="absolute inset-0 opacity-10 w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+                            <path d="M32 0H0V32" fill="none" stroke="white" stroke-width="0.5" />
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#grid)" />
+                </svg>
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+                        <!-- Left column: Who Is Best Broker World For? -->
+                        <div>
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Who Is Best Broker World For?
+                            </h2>
+                            <div class="mt-8 space-y-6">
+                                <div class="bg-white/95 rounded-xl p-6 shadow">
+                                    <h3 class="text-lg font-bold text-gray-900">Students & Beginners</h3>
+                                    <p class="mt-2 text-gray-600 font-sans">
+                                        Starting their financial literacy journey with foundational concepts and clear
+                                        guidance.
+                                    </p>
+                                </div>
+                                <div class="bg-white/95 rounded-xl p-6 shadow">
+                                    <h3 class="text-lg font-bold text-gray-900">Families</h3>
+                                    <p class="mt-2 text-gray-600 font-sans">
+                                        Seeking clear, objective education for household money management and long-term
+                                        security.
+                                    </p>
+                                </div>
+                                <div class="bg-white/95 rounded-xl p-6 shadow">
+                                    <h3 class="text-lg font-bold text-gray-900">Entrepreneurs</h3>
+                                    <p class="mt-2 text-gray-600 font-sans">
+                                        Improving financial awareness to support their professional growth and business
+                                        stability.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right column: Our Transparency Commitment -->
+                        <div>
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Our Transparency Commitment</h2>
+                            <p class="mt-6 text-white/90 text-lg">
+                                Broker World Check operates exclusively as an educational and informational resource. We
+                                are not a
+                                financial advisor, broker, intermediary, or service provider. We do not process
+                                transactions, recommend
+                                financial products, or provide personalized financial advice.
+                            </p>
+                            <div class="mt-8">
+                                <a href="about.html"
+                                    class="inline-flex items-center justify-center px-6 py-3 rounded-md bg-white text-violet-700 hover:bg-violet-50 transition text-base font-semibold shadow">
+                                    Read our full disclaimer
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <svg class="block w-full text-slate-50" viewBox="0 0 1440 80" preserveAspectRatio="none"
+                    fill="currentColor">
+                    <path d="M0,64L1440,0L1440,80L0,80Z"></path>
+                </svg>
+            </div>
+        </section>
+
+        <div role="note" aria-label="Informational notice"
+            class="my-4 rounded-lg border border-slate-200 border-l-4 border-l-violet-600 bg-slate-50 px-4 py-3 text-slate-900 max-w-7xl mx-auto">
+            <span class="mr-2">ℹ️</span> Independent financial education and informational platform – not a financial
+            institution or advisor.
+        </div>
+    </main>
+
+    <!-- Footer: different color, centered, separated -->
+    <footer class="bg-indigo-800 text-indigo-100 border-t border-indigo-700 font-sans">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="space-y-6 text-center">
+                <div>
+                    <h3 class="text-sm font-semibold uppercase tracking-wider">Legal</h3>
+                    <div class="mt-3 flex flex-wrap justify-center gap-4">
+                        <!--             <a href="index.html" class="hover:text-white transition-colors">Home</a>
+            <a href="about.html" class="hover:text-white transition-colors">About Us</a>
+            <a href="contact.html" class="hover:text-white transition-colors">Contact</a> -->
+                        <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="terms.html" class="hover:text-white transition-colors">Terms and Conditions</a>
+                        <a href="cookies.html" class="hover:text-white transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+
+                <div class="h-px bg-fuchsia-800"></div>
+
+                <div>
+                    <h3 class="text-sm font-semibold uppercase tracking-wider">Contact</h3>
+                    <p class="mt-3 text-sm">Email: <a href="mailto:info@brokerworldcheck.com"
+                            class="hover:text-white transition-colors">info@brokerworldcheck.com</a></p>
+                    <p class="text-sm">Phone: +1 234 567 8709</p>
+                </div>
+
+                <div class="h-px bg-fuchsia-800"></div>
+
+                <div>
+                    <span class="text-xl font-bold tracking-tight">WORLD CHEER CO LLC</span>
+                    <p>
+                        86-3771961</p>
+                    <p class="mt-2 text-sm">
+                        929 E Rosewood Ave <br>
+                        Naperville, IL 60563
+                    </p>
+                </div>
+
+                <div class="h-px bg-fuchsia-800"></div>
+
+                <div class="bg-fuchsia-950/40 rounded-lg p-4">
+                    <p class="text-sm text-fuchsia-100">
+                        <strong>Compliance & Education Notice:</strong> Broker World Check provides educational content
+                        and tools only. We do not offer financial products or advice and do not facilitate transactions.
+                        Always confirm details with licensed professionals before making financial decisions.
+                    </p>
+                </div>
+
+                <p class="text-xs text-fuchsia-200">&copy;
+                    <script>document.write(new Date().getFullYear())</script> Broker World Check. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/mobile-nav.js"></script>
+</body>
+
+</html>

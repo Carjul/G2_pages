@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        International Brokers Review - Independent Financial Education
+    </title>
+    <meta name="description"
+        content="International Brokers Review is an independent educational platform focused on improving financial literacy and long-term financial awareness.">
+
+    <!-- Tailwind CDN (kept for styling only; content and markup preserved exactly) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { brand: { 50: '#f5f7ff', 500: '#7c3aed', 700: '#5b21b6' } },
+                    fontFamily: { heading: ['"Playfair Display"', 'serif'], body: ['"Inter"', 'system-ui', 'sans-serif'] }
+                }
+            }
+        };
+    </script>
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237C3AED' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M12 7l3 5-3 5-3-5 3-5'/%3E%3Ccircle cx='12' cy='12' r='1'/%3E%3C/svg%3E">
+</head>
+
+<body class="font-body text-slate-700 bg-white">
+    <!-- Header -->
+        <header class="border-b">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <span
+                            class="inline-flex items-center justify-center w-10 h-10 rounded-md bg-brand-100 text-brand-700"
+                            aria-hidden="true"
+                        >
+                            <svg
+                                class="w-6 h-6"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                            >
+                                <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="9"
+                                    stroke-width="1.5"
+                                />
+                                <path
+                                    d="M12 7l3 5-3 5-3-5 3-5"
+                                    stroke-width="1.5"
+                                />
+                            </svg>
+                        </span>
+                        <span class="font-bold text-slate-900"
+                            >International Brokers Review</span
+                        >
+                    </a>
+
+                    <nav
+                        class="hidden md:flex md:items-center md:space-x-6"
+                        aria-label="Main"
+                    >
+                        <a
+                            href="index.html"
+                            class="text-slate-700 hover:text-brand-700"
+                            >Home</a
+                        >
+                        <a
+                            href="about.html"
+                            class="text-slate-700 hover:text-brand-700"
+                            >About Us</a
+                        >
+                        <a
+                            href="contact.html"
+                            class="text-slate-700 hover:text-brand-700"
+                            >Contact</a
+                        >
+                    </nav>
+
+                    <div class="md:hidden">
+                        <button
+                            id="mobileMenuBtn"
+                            aria-controls="mobileNav"
+                            aria-expanded="false"
+                            class="p-2 rounded-md text-slate-700 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-brand-300"
+                        >
+                            <span class="sr-only">Open menu</span>
+                            <svg
+                                class="w-6 h-6"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    d="M4 7h16M4 12h16M4 17h16"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile nav (hidden by default) -->
+            <div id="mobileNav" class="md:hidden hidden border-t">
+                <div class="px-4 py-3 space-y-1">
+                    <a href="index.html" class="block py-2 rounded hover:bg-slate-50">Home</a>
+                    <a href="about.html" class="block py-2 rounded hover:bg-slate-50">About Us</a>
+                    <a href="contact.html" class="block py-2 rounded hover:bg-slate-50">Contact</a>
+                </div>
+            </div>
+
+            <div id="mobileNav" class="md:hidden hidden border-t">
+                <div class="px-4 py-3 space-y-1">
+                    <a
+                        href="index.html"
+                        class="block py-2 rounded hover:bg-slate-50"
+                        >Home</a
+                    >
+                    <a
+                        href="about.html"
+                        class="block py-2 rounded hover:bg-slate-50"
+                        >About Us</a
+                    >
+                    <a
+                        href="contact.html"
+                        class="block py-2 rounded hover:bg-slate-50"
+                        >Contact</a
+                    >
+                </div>
+            </div>
+        </header>
+
+    <!-- Main Content (content preserved exactly; minimal styling wrappers added) -->
+    <main class="mt-8">
+        <!-- Compliance Notice (preserved text + inline styles) -->
+        <div role="note" aria-label="Informational notice" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+            style="background:#f5f7fb;border:1px solid #e1e6f0;border-left:4px solid #3b82f6;border-radius:8px;padding:12px 14px;margin:16px auto;font-weight:500;font-size:14px;line-height:1.5;font-family:system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;color:#0f172a;">
+            <span style="display:inline-block;margin-right:6px;">ℹ️</span> Independent financial education and
+            informational platform – not a financial institution or advisor.
+        </div>
+
+        <!-- Hero Section (preserve image and markup exactly) -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h1 class="text-3xl sm:text-4xl font-heading font-bold text-slate-900 leading-tight">
+                        Empowering your
+                        <br />financial future
+                    </h1>
+                    <p class="mt-4 text-slate-600">
+                        International Brokers Review is your trusted independent platform for financial literacy. We
+                        clarify
+                        complex money management concepts to help you build valid, long-term wealth strategies.
+                    </p>
+                    <div class="mt-6 flex gap-3">
+                        <a href="#features"
+                            class="inline-flex items-center px-5 py-3 bg-brand-500 text-white rounded-md shadow hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-300">Explore
+                            Resources</a>
+                        <a href="contact.html"
+                            class="inline-flex items-center px-5 py-3 border border-slate-200 text-slate-700 rounded-md hover:bg-slate-50">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Hero Image: preserved exactly as in root -->
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&amp;fit=crop&amp;w=1600&amp;q=80"
+                        alt="Mesa de trabajo con material financiero y cuadernos"
+                        class="w-full h-80 object-cover sm:h-96" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- What We Offer (content preserved) -->
+        <section id="features" class="mt-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-lg font-semibold text-brand-700">
+                        What Does International Brokers Review Offer?
+                    </h2>
+                    <p class="mt-2 text-slate-600 max-w-2xl mx-auto">
+                        Unbiased, research-based information to guide your financial journey.
+                    </p>
+                </div>
+
+                <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <article class="p-6 rounded-lg border shadow-sm bg-white">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-brand-50 text-brand-700 rounded-md flex items-center justify-center">
+                                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M12 3l8 5-8 5-8-5 8-5z" stroke-width="1.5"></path>
+                                </svg>
+                            </div>
+                            <h3 class="font-semibold text-slate-900">
+                                Education Guides
+
+
+                            </h3>
+                        </div>
+                        <p class="mt-4 text-sm text-slate-600">
+                            Budgeting basics, saving habits, and investment concepts explained simply. Strictly for
+                            learning.
+                        </p>
+                    </article>
+                    <article class="p-6 rounded-lg border shadow-sm bg-white">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-brand-50 text-brand-700 rounded-md flex items-center justify-center">
+                                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M12 3l8 5-8 5-8-5 8-5z" stroke-width="1.5"></path>
+                                </svg>
+                            </div>
+                            <h3 class="font-semibold text-slate-900">
+                                Non-Transactional Learning
+
+
+                            </h3>
+                        </div>
+                        <p class="mt-4 text-sm text-slate-600">
+                            Explore how financial concepts work in theory. No sales, no product pushing.
+                        </p>
+                    </article>
+
+                    <article class="p-6 rounded-lg border shadow-sm bg-white">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-brand-50 text-brand-700 rounded-md flex items-center justify-center">
+                                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M12 2a7 7 0 017 7c0 3-2 4-3 6H8c-1-2-3-3-3-6a7 7 0 017-7z"
+                                        stroke-width="1.5">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h3 class="font-semibold text-slate-900">
+                                Independent Insights
+
+                            </h3>
+                        </div>
+                        <p class="mt-4 text-sm text-slate-600">
+
+                            Research-based content free from sponsorships. We do not endorse any financial institutions.
+                        </p>
+                    </article>
+
+                    <article class="p-6 rounded-lg border shadow-sm bg-white">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-brand-50 text-brand-700 rounded-md flex items-center justify-center">
+                                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <circle cx="12" cy="12" r="7" stroke-width="1.5"></circle>
+                                </svg>
+                            </div>
+                            <h3 class="font-semibold text-slate-900">
+                                Future-Focused
+                            </h3>
+                        </div>
+                        <p class="mt-4 text-sm text-slate-600">
+                            Emphasizing awareness and planning to help you
+                            build knowledge that supports thoughtful
+                            learning.
+                        </p>
+                    </article>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Audience & Transparency sections (content preserved) -->
+        <section class="mt-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-lg font-heading font-bold text-gray">Who Is International Brokers Review For?</h2>
+
+                <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-slate-600">
+                    <div class="p-4 border rounded-lg">
+                        <!-- Student icon preserved -->
+                        <div aria-hidden="true" class="mb-2 text-brand-700">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 14l9-5-9-5-9 5 9 5z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold">Students & Beginners</h3>
+                        <p class="mt-2">Starting their financial literacy journey with foundational concepts and clear
+                            guidance.</p>
+                    </div>
+
+                    <div class="p-4 border rounded-lg">
+                        <div aria-hidden="true" class="mb-2 text-brand-700">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold">Families</h3>
+                        <p class="mt-2">Seeking clear, objective education for household money management and long-term
+                            security.</p>
+                    </div>
+
+                    <div class="p-4 border rounded-lg">
+                        <div aria-hidden="true" class="mb-2 text-brand-700">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold">Entrepreneurs</h3>
+                        <p class="mt-2">Improving financial awareness to support their professional growth and business
+                            stability.</p>
+                    </div>
+                </div>
+
+                <div class="mt-8">
+                    <h2 class="text-xl font-semibold">Our Transparency Commitment</h2>
+                    <p class="mt-2 text-slate-600">International Brokers Review operates exclusively as an educational
+                        and
+                        informational resource. We are not a financial advisor, broker, intermediary, or service
+                        provider. We do not process transactions, recommend financial products, or provide personalized
+                        financial advice.</p>
+                    <div class="mt-3">
+                        <a href="about.html" class="text-brand-700 hover:underline">Read our full disclaimer</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- small repeated compliance note (preserved) -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+            <div role="note" aria-label="Informational notice"
+                style="background:#f5f7fb;border:1px solid #e1e6f0;border-left:4px solid #3b82f6;border-radius:8px;padding:12px 14px;font-weight:500;font-size:14px;line-height:1.5;font-family:system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;color:#0f172a;">
+                <span style="display:inline-block;margin-right:6px;">ℹ️</span> Independent financial education and
+                informational platform – not a financial institution or advisor.
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t bg-slate-50 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div>
+                    <p class="font-semibold text-slate-900">
+                        INTERNATIONAL BROKING SOLUTIONS CORP.
+                    </p>
+                    <p class="mt-2 text-sm text-slate-600">
+                        20-3443113 <br /> 333 SE 2ND AVE, STE 2000<br />MIAMI,
+                        FL 33131
+                    </p>
+                </div>
+
+                <nav aria-label="Footer quick links" class="flex gap-8">
+                    <div>
+                        <h4 class="font-medium text-slate-800">
+                            Quick Links
+                        </h4>
+                        <ul class="mt-3 space-y-2 text-sm">
+                            <li>
+                                <a href="index.html" class="text-slate-600 hover:text-slate-900">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html" class="text-slate-600 hover:text-slate-900">About Us</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="text-slate-600 hover:text-slate-900">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="font-medium text-slate-800">Legal</h4>
+                        <ul class="mt-3 space-y-2 text-sm">
+                            <li>
+                                <a href="privacy.html" class="text-slate-600 hover:text-slate-900">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="terms.html" class="text-slate-600 hover:text-slate-900">Terms and
+                                    Conditions</a>
+                            </li>
+                            <li>
+                                <a href="cookies.html" class="text-slate-600 hover:text-slate-900">Cookie Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div>
+                    <h4 class="font-medium text-slate-800">Contact</h4>
+                    <div class="mt-3 text-sm text-slate-600">
+                        <p>
+                            Email:
+                            <a href="mailto:info@internationalbrokersreview.com"
+                                class="text-brand-700 hover:underline">info@internationalbrokersreview.com</a>
+                        </p>
+                        <p class="mt-1">Phone: +1 797 898 5913</p>
+                        <p class="mt-1">
+                             
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 border-t pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-sm text-slate-500">
+                    <strong>Compliance & Education Notice:</strong>
+                    International Brokers Review provides educational
+                    content and tools only. We do not offer financial
+                    products or advice and do not facilitate transactions.
+                    Always confirm details with licensed professionals
+                    before making financial decisions..
+                </p>
+               
+            </div>
+            <div class="mt-8 border-t pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            
+                <p class="text-sm text-slate-500">
+                    &copy; <span id="year"></span> INTERNATIONAL BROKERS
+                    REVIEW. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+     <script>
+            // mobile nav & year
+            // Mobile nav toggle
+            const mobileBtn = document.getElementById("mobileMenuBtn");
+            const mobileNav = document.getElementById("mobileNav");
+            if (mobileBtn && mobileNav) {
+                mobileBtn.addEventListener("click", () => {
+                    const expanded =
+                        mobileBtn.getAttribute("aria-expanded") === "true";
+                    mobileBtn.setAttribute("aria-expanded", String(!expanded));
+                    mobileNav.classList.toggle("hidden");
+                });
+            }
+            // Current year in footer
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+</body>
+
+</html>
