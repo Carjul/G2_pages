@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Broker Guide - About Us</title>
+    <meta name="description" content="Learn about World Broker Guide, an independent platform for financial education." />
+    <link rel="icon" href="https://worldbrokerguide.com/wp-content/uploads/2025/09/cropped-worldbrokerguide-32x32.png" sizes="32x32" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        mono: ['IBM Plex Mono', 'monospace'],
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+        body { font-family: 'IBM Plex Mono', monospace; }
+        .grid-overlay::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-[#E5E5E1] text-black relative">
+    <div class="grid-overlay"></div>
+    <!-- Header Navbar -->
+    <header class="bg-[#1A1A1A] text-white border-b-2 border-stone-400">
+        <div class="flex justify-between items-center p-4">
+            <div class="flex items-center space-x-4">
+                <!-- Education Logo Icon -->
+                <div>
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-8 h-8">
+                        <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.955 11.955 0 0012 20.055a11.955 11.955 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.955 11.955 0 0012 20.055a11.955 11.955 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                    </svg>
+                </div>
+                <a href="https://worldbrokerguide.com/" class="text-xl font-black uppercase">World Broker Guide</a>
+            </div>
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-4">
+                <a href="https://worldbrokerguide.com/" class="border-2 border-stone-400 px-4 py-2 text-lg font-black uppercase">Home</a>
+                <a href="https://worldbrokerguide.com/about-us/" class="border-2 border-stone-400 px-4 py-2 text-lg font-black uppercase">About Us</a>
+                <a href="https://worldbrokerguide.com/contact-us/" class="border-2 border-stone-400 px-4 py-2 text-lg font-black uppercase">Contact</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button id="open-menu" class="md:hidden text-2xl">☰</button>
+        </div>
+    </header>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-[#1A1A1A] text-white flex flex-col items-center justify-center transform -translate-y-full transition-transform duration-300 z-50">
+        <a href="https://worldbrokerguide.com/" class="text-4xl font-black uppercase mb-4 border-2 border-stone-400 px-8 py-4">Home</a>
+        <a href="https://worldbrokerguide.com/about-us/" class="text-4xl font-black uppercase mb-4 border-2 border-stone-400 px-8 py-4">About Us</a>
+        <a href="https://worldbrokerguide.com/contact-us/" class="text-4xl font-black uppercase mb-4 border-2 border-stone-400 px-8 py-4">Contact</a>
+        <button id="close-menu" class="text-4xl font-black uppercase mt-8 border-2 border-stone-400 px-8 py-4">Close</button>
+    </div>
+
+    <!-- Main Content -->
+    <main class="p-4 md:p-8 space-y-16">
+        <!-- Compliance Notice -->
+        <div class="bg-[#1A1A1A] text-white p-4 border-2 border-stone-400">
+            <span class="text-[#FF4F00]">ℹ️</span> Independent financial education and informational platform – not a financial institution or advisor.
+        </div>
+        <!-- Header Banner -->
+        <section class="max-w-4xl mx-auto">
+            <div class="bg-[#1A1A1A] text-white p-4 md:p-8 border-2 border-stone-400">
+                <h1 class="text-3xl md:text-6xl font-black uppercase mb-4">About Us</h1>
+                <p class="text-base md:text-lg">Our mission is to make financial concepts clear, accessible, and easy to understand for everyone.</p>
+            </div>
+            <div class="bg-gradient-to-br from-gray-900 via-blue-900 to-black p-8 md:p-12 border-2 border-stone-400 min-h-[160px] flex items-center">
+                <p class="text-white text-sm md:text-base uppercase font-black tracking-wide">Transparent, educational, and independent</p>
+            </div>
+        </section>
+
+        <div class="space-y-16">
+            <section class="bg-[#E5E5E1] p-4 md:p-8 border-2 border-stone-400">
+                <h2 class="text-3xl md:text-5xl font-black uppercase mb-4"> Who We Are:</h2>
+                <div class="text-justify">
+                    <p>World Broker Guide is an independent educational platform dedicated to improving financial literacy and long-term financial awareness. Our mission is to make financial concepts clear, accessible, and easy to understand—helping individuals, families, and professionals build a stronger understanding of money management and future-focused financial thinking.</p>
+                    <p>We believe that financial education is essential for developing confidence and awareness over time. That’s why our content is designed to simplify complex financial topics into clear, objective, and easy-to-follow educational materials.</p>
+                </div>
+            </section>
+
+            <section class="bg-[#1A1A1A] text-white p-4 md:p-8 border-2 border-stone-400">
+                <h2 class="text-3xl md:text-5xl font-black uppercase mb-4"> What We Do:</h2>
+                <div class="text-justify">
+                    <p>At World Broker Guide, we provide educational content and informational resources created to support learning—not to promote or facilitate financial services. Our platform includes:</p>
+                    <ul class="list-none space-y-4">
+                        <li class="border-2 border-stone-400 p-4"><strong>Financial Education Guides</strong> – covering budgeting fundamentals, saving habits, financial awareness, and introductory investment concepts.</li>
+                        <li class="border-2 border-stone-400 p-4"><strong>Informational Learning Resources</strong> – designed to help users explore financial ideas in a general, non-transactional, educational context.</li>
+                        <li class="border-2 border-stone-400 p-4"><strong>Independent Insights</strong> – developed through research and analysis, free from sponsorships, endorsements, or commercial influence.</li>
+                        <li class="border-2 border-stone-400 p-4"><strong>Global Perspective</strong> – offering educational explanations that apply broadly while acknowledging differences across financial systems and regions.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="bg-[#E5E5E1] p-4 md:p-8 border-2 border-stone-400">
+                <h2 class="text-3xl md:text-5xl font-black uppercase mb-4"> Who We Serve:</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="border-2 border-stone-400 p-4">
+                        <div class="text-[#FF4F00] text-2xl md:text-4xl font-black mb-2">1</div>
+                        <p>Individuals beginning their financial literacy journey</p>
+                    </div>
+                    <div class="border-2 border-stone-400 p-4">
+                        <div class="text-[#FF4F00] text-2xl md:text-4xl font-black mb-2">2</div>
+                        <p>Families seeking clear and objective financial education</p>
+                    </div>
+                    <div class="border-2 border-stone-400 p-4">
+                        <div class="text-[#FF4F00] text-2xl md:text-4xl font-black mb-2">3</div>
+                        <p>Students and young adults learning foundational money concepts</p>
+                    </div>
+                    <div class="border-2 border-stone-400 p-4">
+                        <div class="text-[#FF4F00] text-2xl md:text-4xl font-black mb-2">4</div>
+                        <p>Freelancers and entrepreneurs wanting general financial awareness</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-[#1A1A1A] text-white p-4 md:p-8 border-2 border-stone-400">
+                <h2 class="text-3xl md:text-5xl font-black uppercase mb-4"> Our Commitment to Transparency</h2>
+                <p class="text-justify">World Broker Guide is not a financial advisor, broker, intermediary, or service provider. We do not process transactions, recommend financial products, or provide personalized financial advice. Our role is strictly educational, delivering neutral and research-based information to support responsible financial learning.</p>
+                <h3 class="text-xl md:text-3xl font-black uppercase mt-4">Disclaimer</h3>
+                <p class="text-justify">All tools, resources, and content provided by World Broker Guide are for educational and informational purposes only. They are not intended to be financial, legal, or investment advice. Users should always consult licensed professionals before making financial decisions.</p>
+            </section>
+
+            <div class="bg-[#E5E5E1] p-4 md:p-8 border-2 border-stone-400">
+                <h3 class="text-xl md:text-4xl font-black uppercase mb-4">Let’s Connect</h3>
+                <p>Questions? Partnerships? Media inquiries?</p>
+                <div class="mt-4">
+                    <p>Email: <a href="mailto:info@worldbrokerguide.com">info@worldbrokerguide.com</a></p>
+                    <p>Phone: +1 522 020 1471</p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="bg-[#E5E5E1] p-4 border-2 border-stone-400">
+            <span class="text-[#FF4F00]">ℹ️</span> Independent financial education and informational platform – not a financial institution or advisor.
+        </div>
+    </main>
+
+    <footer class="bg-[#1A1A1A] text-white p-4 md:p-8 border-t-2 border-stone-400">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <span class="text-base md:text-lg font-black uppercase">WORLD BROTHERS, INC.</span>
+                <p>59-1289167<br>1200 BRICKELL AVENUE SUITE 1950<br>
+MIAMI, FL 33131</p>
+            </div>
+            <div>
+                <h3 class="text-lg md:text-xl font-black uppercase mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="https://worldbrokerguide.com/" class="border-2 border-stone-400 px-2 py-1">Home</a></li>
+                    <li><a href="https://worldbrokerguide.com/about-us/" class="border-2 border-stone-400 px-2 py-1">About Us</a></li>
+                    <li><a href="https://worldbrokerguide.com/contact-us/" class="border-2 border-stone-400 px-2 py-1">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg md:text-xl font-black uppercase mb-4">Legal</h3>
+                <ul class="space-y-2">
+                    <li><a href="https://worldbrokerguide.com/privacy-policy/" class="border-2 border-stone-400 px-2 py-1">Privacy Policy</a></li>
+                    <li><a href="https://worldbrokerguide.com/terms-and-conditions/" class="border-2 border-stone-400 px-2 py-1">Terms and Conditions</a></li>
+                    <li><a href="https://worldbrokerguide.com/cookie-policy/" class="border-2 border-stone-400 px-2 py-1">Cookie Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg md:text-xl font-black uppercase mb-4">Contact</h3>
+                <p>Email: <a href="mailto:info@worldbrokerguide.com">info@worldbrokerguide.com</a></p>
+                <p>Phone: +1 522 020 1471</p>
+            </div>
+        </div>
+        <div class="mt-8 border-t-2 border-stone-400 pt-4">
+            <p><strong>Compliance & Education Notice:</strong> World Broker Guide provides educational content and tools only. We do not offer financial products or advice and do not facilitate transactions. Always confirm details with licensed professionals before making financial decisions.</p>
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> World Broker Guide. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('open-menu').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.remove('-translate-y-full');
+        });
+        document.getElementById('close-menu').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.add('-translate-y-full');
+        });
+    </script>
+</body>
+</html>
