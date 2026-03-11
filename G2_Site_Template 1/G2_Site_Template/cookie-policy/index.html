@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cookie Policy - Broker World Check</title>
+        <meta
+            name="description"
+            content="Cookie Policy for Broker World Check."
+        />
+        
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    </style>
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234F46E5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 21h18'/%3E%3Cpath d='M7 16V8'/%3E%3Cpath d='M12 16V4'/%3E%3Cpath d='M17 16V12'/%3E%3C/svg%3E">
+</head>
+
+<body class="bg-zinc-50 text-zinc-800 flex flex-col min-h-screen font-sans antialiased">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 sm:h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <!-- Education Logo Icon -->
+                    <div class="bg-indigo-600 text-white p-1.5 rounded-lg">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 20h18" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V8" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 16V4" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16V12" />
+                        </svg>
+                    </div>
+                    <a href="https://brokerworldcheck.com/" class="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight font-sans">Broker World
+                        Check</a>
+                </div>
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-6">
+                    <a href="https://brokerworldcheck.com/"
+                        class="text-gray-900 hover:text-indigo-600 px-2 sm:px-3 py-2 text-sm font-semibold transition-colors font-sans inline-flex items-center gap-2">
+                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M3 11l9-7 9 7v9a2 2 0 01-2 2H5a2 2 0 01-2-2v-9z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M9 21V9h6v12" />
+                        </svg>
+                        Home
+                    </a>
+                    <a href="https://brokerworldcheck.com/about-us/"
+                        class="text-gray-500 hover:text-indigo-600 px-2 sm:px-3 py-2 text-sm font-medium transition-colors font-sans inline-flex items-center gap-2">
+                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <circle cx="12" cy="12" r="9" stroke-width="2"></circle>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 16v-4" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8h.01" />
+                        </svg>
+                        About Us
+                    </a>
+                    <a href="https://brokerworldcheck.com/contact-us/"
+                        class="text-gray-500 hover:text-indigo-600 px-2 sm:px-3 py-2 text-sm font-medium transition-colors font-sans inline-flex items-center gap-2">
+                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        Contact
+                    </a>
+                </nav>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobileMenuBtn" aria-expanded="false" aria-controls="mobileNav" class="p-2 rounded-md inline-flex items-center justify-center text-gray-700 hover:bg-gray-100">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Mobile Nav (hidden by default) -->
+    <nav id="mobileNav" class="md:hidden hidden bg-white border-b">
+        <div class="px-4 pt-2 pb-4 space-y-1">
+            <a href="https://brokerworldcheck.com/" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 inline-flex items-center gap-2">
+                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M3 11l9-7 9 7v9a2 2 0 01-2 2H5a2 2 0 01-2-2v-9z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 21V9h6v12" />
+                </svg>
+                Home
+            </a>
+            <a href="https://brokerworldcheck.com/about-us/" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 inline-flex items-center gap-2">
+                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <circle cx="12" cy="12" r="9" stroke-width="2"></circle>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 16v-4" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8h.01" />
+                </svg>
+                About Us
+            </a>
+            <a href="https://brokerworldcheck.com/contact-us/" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 inline-flex items-center gap-2">
+                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                Contact
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <!-- Compliance Notice -->
+        <div role="note" aria-label="Informational notice" style="
+            background:#f6f7fc;border:1px solid #e5e7eb;border-left:4px solid #4f46e5;border-radius:8px;
+            padding:12px 14px;margin:16px auto;max-width:72rem;font-weight:500;font-size:14px;line-height:1.5;
+            font-family:system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;color:#0f172a;">
+            <span style="display:inline-block;margin-right:6px">ℹ️</span>
+            Independent financial education and informational platform – not a financial institution or advisor.
+        </div>
+
+        <!-- Cookie Policy Content -->
+        <section class="py-12 sm:py-16">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-10">
+                    <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900">Cookie Policy</h1>
+                    <p class="mt-4 text-lg text-gray-600 font-sans max-w-2xl mx-auto">
+                        Last updated: January 2025
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl ring-1 ring-indigo-100 shadow-sm p-6 sm:p-8">
+                    <div class="prose prose-indigo max-w-none">
+                        <p class="text-gray-600 mb-6 font-sans">
+                            This Cookie Policy explains how Broker World Check ("we," "our," or "us") uses cookies and similar technologies to recognize you when you visit our website at <a href="https://brokerworldcheck.com" class="text-indigo-600 hover:text-indigo-700">brokerworldcheck.com</a> (the "Site"). It explains what these technologies are and why we use them, as well as your rights to control our use of them.
+                        </p>
+
+                        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">1. What Are Cookies?</h2>
+                        <p class="text-gray-600 mb-4 font-sans">
+                            Cookies are small data files that are placed on your computer or mobile device when you visit a website. Cookies are widely used by website owners to make their websites work, or to work more efficiently, as well as to provide reporting information.
+                        </p>
+                        <p class="text-gray-600 mb-4 font-sans">
+                            Cookies set by the website owner (in this case, Broker World Check) are called "first-party cookies." Cookies set by parties other than the website owner are called "third-party cookies." Third-party cookies enable third-party features or functionality to be provided on or through the website (e.g., advertising, interactive content, and analytics). The parties that set these third-party cookies can recognize your computer both when it visits the website in question and also when it visits certain other websites.
+                        </p>
+
+                        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">2. Why Do We Use Cookies?</h2>
+                        <p class="text-gray-600 mb-4 font-sans">
+                            We use first-party and third-party cookies for several reasons. Some cookies are required for technical reasons in order for our Site to operate, and we refer to these as "essential" or "strictly necessary" cookies. Other cookies also enable us to track and target the interests of our users to enhance the experience on our Site. Third parties serve cookies through our Site for advertising, analytics, and other purposes.
+                        </p>
+
+                        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">3. Types of Cookies We Use</h2>
+                        <p class="text-gray-600 mb-4 font-sans">
+                            The specific types of first- and third-party cookies served through our Site and the purposes they perform are described below:
+                        </p>
+
+                        <div class="bg-zinc-50 p-6 rounded-lg border border-zinc-100 mt-4">
+                            <h3 class="text-lg font-bold text-gray-900 mb-3">Essential Website Cookies</h3>
+                            <p class="text-gray-600 mb-3 font-sans">
+                                These cookies are strictly necessary to provide you with services available through our Site and to use some of its features, such as access to secure areas.
+                            </p>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-600 font-sans">
+                                <li><strong>Name:</strong> session_cookie</li>
+                                <li><strong>Purpose:</strong> Maintains user session state across page requests</li>
+                                <li><strong>Provider:</strong> Broker World Check</li>
+                                <li><strong>Service:</strong> Session management</li>
+                                <li><strong>Type:</strong> HTTP Cookie</li>
+                                <li><strong>Expiry:</strong> Session</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-zinc-50 p-6 rounded-lg border border-zinc-100 mt-6">
+                            <h3 class="text-lg font-bold text-gray-900 mb-3">Performance and Functionality Cookies</h3>
+                            <p class="text-gray-600 mb-3 font-sans">
+                                These cookies are used to enhance the performance and functionality of our Site but are non-essential to their use. However, without these cookies, certain functionality may become unavailable.
+                            </p>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-600 font-sans">
+                                <li><strong>Name:</strong> preference_cookie</li>
+                                <li><strong>Purpose:</strong> Remembers user preferences and settings</li>
+                                <li><strong>Provider:</strong> Broker World Check</li>
+                                <li><strong>Service:</strong> User preferences</li>
+                                <li><strong>Type:</strong> HTTP Cookie</li>
+                                <li><strong>Expiry:</strong> 1 year</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-zinc-50 p-6 rounded-lg border border-zinc-100 mt-6">
+                            <h3 class="text-lg font-bold text-gray-900 mb-3">Analytics and Customization Cookies</h3>
+                            <p class="text-gray-600 mb-3 font-sans">
+                                These cookies collect information that is used either in aggregate form to help us understand how our Site is being used or how effective our marketing campaigns are, or to help us customize our Site for you.
+                            </p>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-600 font-sans">
+                                <li><strong>Name:</strong> _ga</li>
+                                <li><strong>Purpose:</strong> Registers a unique ID that is used to generate statistical data on how the visitor uses the website</li>
+                                <li><strong>Provider:</strong> Google Analytics</li>
+                                <li><strong>Service:</strong> Google Analytics</li>
+                                <li><strong>Type:</strong> HTTP Cookie</li>
+                                <li><strong>Expiry:</strong> 2 years</li>
+                            </ul>
+                        </div>
+
+                        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">4. How Can You Control Cookies?</h2>
+                        <p class="text-gray-600 mb-4 font-sans">
+                            You have the right to decide whether to accept or reject cookies. You can exercise your cookie rights by setting your preferences in the Cookie Consent Manager. The Cookie Consent Manager allows you to select which categories of cookies you accept or reject. Essential cookies cannot be rejected as they are strictly necessary to provide you with services.
+                        </p>
+                        <p class="text-gray-600 mb-4 font-sans">
+                            You can also set or amend your web browser controls to accept or refuse cookies. If you choose to reject cookies, you may still use our website though your access to some functionality and areas of our website may be restricted. As the means by which you can refuse cookies through your web browser controls vary from browser to browser, you should visit your browser's help menu for more information.
+                        </p>
+
+                        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">5. Do We Use Other Tracking Technologies?</h2>
+                        <p class="text-gray-600 mb-4 font-sans">
+                            In addition to cookies, we may use web beacons, pixel tags, and other tracking technologies on our Site to help customize the Site and improve your experience. A "web beacon" (also known as a clear gif, pixel tag, or web bug) is a tiny graphic image that may be used in our Site or emails. Web beacons allow us, for example, to count users who have visited those pages or opened an email and for other related website statistics (for example, recording the popularity of certain website content and verifying system and server integrity).
+                        </p>
+
+                        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">6. Changes to This Cookie Policy</h2>
+                        <p class="text-gray-600 mb-4 font-sans">
+                            We may update this Cookie Policy from time to time in order to reflect, for example, changes to the cookies we use or for other operational, legal, or regulatory reasons. Please therefore revisit this Cookie Policy regularly to stay informed about our use of cookies and related technologies.
+                        </p>
+
+                        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">7. Contact Us</h2>
+                        <p class="text-gray-600 mb-4 font-sans">
+                            If you have any questions about our use of cookies or other technologies, please contact us at:
+                        </p>
+                        <div class="bg-zinc-50 p-6 rounded-lg border border-zinc-100">
+                            <p class="text-gray-600 font-sans">
+                                <strong>Email:</strong> <a href="mailto:info@brokerworldcheck.com" class="text-indigo-600 hover:text-indigo-700">info@brokerworldcheck.com</a><br>
+                                <strong>Phone:</strong> +1 234 567 8709<br>
+                                <strong>Address:</strong> 929 E Rosewood Ave, Naperville, IL 60563
+                            </p>
+                        </div>
+
+                        <div role="note" aria-label="Informational notice"
+                            class="my-8 rounded-lg border border-slate-200 border-l-4 border-l-indigo-500 bg-slate-50 px-4 py-3 text-slate-900">
+                            <span class="mr-2">ℹ️</span> Independent financial education and informational platform – not a financial institution or advisor.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (same centered, separated style as reference index) -->
+    <footer class="bg-indigo-800 text-indigo-100 border-t border-indigo-700 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="space-y-6 text-center">
+                <div>
+                    <h3 class="text-sm font-semibold uppercase tracking-wider">Legal</h3>
+                    <div class="mt-3 flex flex-wrap justify-center gap-4">
+                        <a href="https://brokerworldcheck.com/privacy-policy/" class="hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="https://brokerworldcheck.com/terms-and-conditions/" class="hover:text-white transition-colors">Terms and Conditions</a>
+                        <a href="https://brokerworldcheck.com/cookie-policy/" class="hover:text-white transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+
+                <div class="h-px bg-fuchsia-800"></div>
+
+                <div>
+                    <h3 class="text-sm font-semibold uppercase tracking-wider">Contact</h3>
+                    <p class="mt-3 text-sm">Email: <a href="mailto:info@brokerworldcheck.com" class="hover:text-white transition-colors">info@brokerworldcheck.com</a></p>
+                    <p class="text-sm">Phone: +1 234 567 8709</p>
+                </div>
+
+                <div class="h-px bg-fuchsia-800"></div>
+
+                <div>
+                    <span class="text-xl font-bold tracking-tight">WORLD CHEER CO LLC</span>
+                    <p>
+                        86-3771961</p>
+                    <p class="mt-2 text-sm">
+                        929 E Rosewood Ave <br>
+                        Naperville, IL 60563
+                    </p>
+                </div>
+
+                <div class="h-px bg-fuchsia-800"></div>
+
+                <div class="bg-fuchsia-950/40 rounded-lg p-4">
+                    <p class="text-sm text-fuchsia-100">
+                        <strong>Compliance & Education Notice:</strong>
+                        Broker World Check provides educational content and tools only. We do not offer financial products or advice and do not facilitate transactions. Always confirm details with licensed professionals before making financial decisions.
+                    </p>
+                </div>
+
+                <p class="text-xs text-fuchsia-200">
+                    &copy; <script>document.write(new Date().getFullYear())</script> Broker World Check. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/mobile-nav.js"></script>
+</body>
+</html>

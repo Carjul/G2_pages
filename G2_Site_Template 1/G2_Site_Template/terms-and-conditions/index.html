@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Terms and Conditions - Broker World Check</title>
+        <meta
+            name="description"
+            content="Terms and Conditions for Broker World Check."
+        /> 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    </style>
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234F46E5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 21h18'/%3E%3Cpath d='M7 16V8'/%3E%3Cpath d='M12 16V4'/%3E%3Cpath d='M17 16V12'/%3E%3C/svg%3E">
+</head>
+
+<body class="bg-zinc-50 text-zinc-800 flex flex-col min-h-screen font-sans antialiased">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 sm:h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <!-- Education Logo Icon -->
+                    <div class="bg-indigo-600 text-white p-1.5 rounded-lg">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 20h18" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V8" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 16V4" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16V12" />
+                        </svg>
+                    </div>
+                    <a href="https://brokerworldcheck.com/" class="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight font-sans">Broker World
+                        Check</a>
+                </div>
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-6">
+                    <a href="https://brokerworldcheck.com/"
+                        class="text-gray-900 hover:text-indigo-600 px-2 sm:px-3 py-2 text-sm font-semibold transition-colors font-sans inline-flex items-center gap-2">
+                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M3 11l9-7 9 7v9a2 2 0 01-2 2H5a2 2 0 01-2-2v-9z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M9 21V9h6v12" />
+                        </svg>
+                        Home
+                    </a>
+                    <a href="https://brokerworldcheck.com/about-us/"
+                        class="text-gray-500 hover:text-indigo-600 px-2 sm:px-3 py-2 text-sm font-medium transition-colors font-sans inline-flex items-center gap-2">
+                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <circle cx="12" cy="12" r="9" stroke-width="2"></circle>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 16v-4" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8h.01" />
+                        </svg>
+                        About Us
+                    </a>
+                    <a href="https://brokerworldcheck.com/contact-us/"
+                        class="text-gray-500 hover:text-indigo-600 px-2 sm:px-3 py-2 text-sm font-medium transition-colors font-sans inline-flex items-center gap-2">
+                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        Contact
+                    </a>
+                </nav>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobileMenuBtn" aria-expanded="false" aria-controls="mobileNav" class="p-2 rounded-md inline-flex items-center justify-center text-gray-700 hover:bg-gray-100">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Mobile Nav (hidden by default) -->
+    <nav id="mobileNav" class="md:hidden hidden bg-white border-b">
+        <div class="px-4 pt-2 pb-4 space-y-1">
+            <a href="https://brokerworldcheck.com/" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 inline-flex items-center gap-2">
+                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M3 11l9-7 9 7v9a2 2 0 01-2 2H5a2 2 0 01-2-2v-9z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 21V9h6v12" />
+                </svg>
+                Home
+            </a>
+            <a href="https://brokerworldcheck.com/about-us/" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 inline-flex items-center gap-2">
+                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <circle cx="12" cy="12" r="9" stroke-width="2"></circle>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 16v-4" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8h.01" />
+                </svg>
+                About Us
+            </a>
+            <a href="https://brokerworldcheck.com/contact-us/" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 inline-flex items-center gap-2">
+                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                Contact
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <!-- Compliance Notice -->
+        <div role="note" aria-label="Informational notice" style="
+            background:#f6f7fc;border:1px solid #e5e7eb;border-left:4px solid #4f46e5;border-radius:8px;
+            padding:12px 14px;margin:16px auto;max-width:72rem;font-weight:500;font-size:14px;line-height:1.5;
+            font-family:system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;color:#0f172a;">
+            <span style="display:inline-block;margin-right:6px">ℹ️</span>
+            Independent financial education and informational platform – not a financial institution or advisor.
+        </div>
+
+        <!-- Terms and Conditions Content -->
+        <section class="py-12 sm:py-16">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-10">
+                    <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900">Terms and Conditions</h1>
+                    <p class="mt-4 text-lg text-gray-600 font-sans max-w-2xl mx-auto">
+                        Last updated: January 2025
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl ring-1 ring-indigo-100 shadow-sm p-6 sm:p-8">
+                    <div class="prose prose-indigo max-w-none">
+                        <p class="text-gray-600 mb-6 font-sans">
+                            Welcome to Broker World Check ("we," "our," or "us"). These Terms and Conditions ("Terms") govern your access to and use of the Broker World Check website located at <a href="https://brokerworldcheck.com" class="text-indigo-600 hover:text-indigo-700">brokerworldcheck.com</a> (the "Site") and any related services, content, and tools provided by us.
+                        </p>
+                        <p class="text-gray-600 mb-6 font-sans">
+                            Please read these Terms carefully before using the Site. By accessing or using the Site, you agree to be bound by these Terms. If you do not agree to these Terms, you may not access or use the Site.
+                        </p>
+
+                        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">1. Educational Purpose Only</h2>
+                        <p class="text-gray-600 mb-4 font-sans">
+                            Broker World Check is an independent educational and informational platform. We provide general financial education content, tools, and resources for informational purposes only. We are not a financial advisor, broker, intermediary, or service provider. We do not:
+                        </p>
+                        <ul class="list-disc pl-5 mt-4 space-y-2 text-gray-600 font-sans">
+                            <li>Provide personalized financial advice</li>
+                            <li>Recommend specific financial products or services</li>
+                            <li>Process financial transactions</li>
+                            <li>Facilitate investments or trading</li>
+                            <li>Act as a financial intermediary</li>
+                        </ul>
+                        <p class="text-gray-600 mt-4 font-sans">
+                            All content on this Site is for educational purposes only and should not be considered financial, legal, or investment advice. You should consult with licensed professionals before making any financial decisions.
+                        </p>
+
+                        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">2. Intellectual Property Rights</h2>
+                        <p class="text-gray-600 mb-4 font-sans">
+                            The Site and its entire contents, features, and functionality (including but not limited to all information, software, text, displays, images, video, and audio, and the design, selection, and arrangement thereof) are owned by Broker World Check, its licensors, or other providers of such material and are protected by United States and international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws.
+                        </p>
+                        <p class="text-gray-600 mb-4 font-sans">
+                            You may not reproduce, distribute, modify, create derivative works of, publicly display, publicly perform, republish, download, store, or transmit any of the material on our Site, except as follows:
+                        </p>
+                        <ul class="list-disc pl-5 mt-4 space-y-2 text-gray-600 font-sans">
+                            <li>Your computer may temporarily store copies of such materials in RAM incidental to your accessing and viewing those materials</li>
+                            <li>You may store files that are automatically cached by your Web browser for display enhancement purposes</li>
+                            <li>You may print or download one copy of a reasonable number of pages of the Site for your own personal, non-commercial use and not for further reproduction, publication, or distribution</li>
+                        </ul>
+
+                        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">3. User Responsibilities</h2>
+                        <p class="text-gray-600 mb-4 font-sans">
+                            By using the Site, you agree to:
+                        </p>
+                        <ul class="list-disc pl-5 mt-4 space-y-2 text-gray-600 font-sans">
+                            <li>Use the Site only for lawful purposes and in accordance with these Terms</li>
+                            <li>Not use the Site in any way that violates any applicable federal, state, local, or international law or regulation</li>
+                            <li>Not engage in any conduct that restricts or inhibits anyone's use or enjoyment of the Site, or which may harm Broker World Check or users of the Site</li>
+                            <li>Not attempt to gain unauthorized access to, interfere with, damage, or disrupt any parts of the Site, the server on which the Site is stored, or any server, computer, or database connected to the Site</li>
+                            <li>Not use any robot, spider, or other automatic device, process, or means to access the Site for any purpose, including monitoring or copying any of the material on the Site</li>
+                        </ul>
+
+                        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">4. Disclaimer of Warranties</h2>
+                        <p class="text-gray-600 mb-4 font-sans">
+                            YOUR USE OF THE SITE AND ITS CONTENT IS AT YOUR OWN RISK. THE SITE AND ITS CONTENT ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT ANY WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. NEITHER BROKER WORLD CHECK NOR ANY PERSON ASSOCIATED WITH BROKER WORLD CHECK MAKES ANY WARRANTY OR REPRESENTATION WITH RESPECT TO THE COMPLETENESS, SECURITY, RELIABILITY, QUALITY, ACCURACY, OR AVAILABILITY OF THE SITE.
+                        </p>
+                        <p class="text-gray-600 mb-4 font-sans">
+                            WITHOUT LIMITING THE FOREGOING, NEITHER BROKER WORLD CHECK NOR ANYONE ASSOCIATED WITH BROKER WORLD CHECK REPRESENTS OR WARRANTS THAT THE SITE, ITS CONTENT, OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE SITE WILL BE ACCURATE, RELIABLE, ERROR-FREE, OR UNINTERRUPTED, THAT DEFECTS WILL BE CORRECTED, THAT OUR SITE OR THE SERVER THAT MAKES IT AVAILABLE ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS, OR THAT THE SITE OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE SITE WILL OTHERWISE MEET YOUR NEEDS OR EXPECTATIONS.
+                        </p>
+
+                        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">5. Limitation of Liability</h2>
+                        <p class="text-gray-600 mb-4 font-sans">
+                            TO THE FULLEST EXTENT PROVIDED BY LAW, IN NO EVENT WILL BROKER WORLD CHECK, ITS AFFILIATES, OR THEIR LICENSORS, SERVICE PROVIDERS, EMPLOYEES, AGENTS, OFFICERS, OR DIRECTORS BE LIABLE FOR DAMAGES OF ANY KIND, UNDER ANY LEGAL THEORY, ARISING OUT OF OR IN CONNECTION WITH YOUR USE, OR INABILITY TO USE, THE SITE, ANY WEBSITES LINKED TO IT, ANY CONTENT ON THE SITE OR SUCH OTHER WEBSITES, INCLUDING ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO, PERSONAL INJURY, PAIN AND SUFFERING, EMOTIONAL DISTRESS, LOSS OF REVENUE, LOSS OF PROFITS, LOSS OF BUSINESS OR ANTICIPATED SAVINGS, LOSS OF USE, LOSS OF GOODWILL, LOSS OF DATA, AND WHETHER CAUSED BY TORT (INCLUDING NEGLIGENCE), BREACH OF CONTRACT, OR OTHERWISE, EVEN IF FORESEEABLE.
+                        </p>
+
+                        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">6. Indemnification</h2>
+                        <p class="text-gray-600 mb-4 font-sans">
+                            You agree to defend, indemnify, and hold harmless Broker World Check, its affiliates, licensors, and service providers, and its and their respective officers, directors, employees, contractors, agents, licensors, suppliers, successors, and assigns from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or relating to your violation of these Terms or your use of the Site, including, but not limited to, any use of the Site's content, services, and products other than as expressly authorized in these Terms.
+                        </p>
+
+                        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">7. Governing Law and Jurisdiction</h2>
+                        <p class="text-gray-600 mb-4 font-sans">
+                            All matters relating to the Site and these Terms, and any dispute or claim arising therefrom or related thereto (in each case, including non-contractual disputes or claims), shall be governed by and construed in accordance with the internal laws of the State of Illinois without giving effect to any choice or conflict of law provision or rule.
+                        </p>
+                        <p class="text-gray-600 mb-4 font-sans">
+                            Any legal suit, action, or proceeding arising out of, or related to, these Terms or the Site shall be instituted exclusively in the federal courts of the United States or the courts of the State of Illinois, in each case located in the City of Chicago and County of Cook, although we retain the right to bring any suit, action, or proceeding against you for breach of these Terms in your country of residence or any other relevant country. You waive any and all objections to the exercise of jurisdiction over you by such courts and to venue in such courts.
+                        </p>
+
+                        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">8. Changes to Terms</h2>
+                        <p class="text-gray-600 mb-4 font-sans">
+                            We may revise and update these Terms from time to time in our sole discretion. All changes are effective immediately when we post them. Your continued use of the Site following the posting of revised Terms means that you accept and agree to the changes. You are expected to check this page from time to time so you are aware of any changes, as they are binding on you.
+                        </p>
+
+                        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">9. Contact Information</h2>
+                        <p class="text-gray-600 mb-4 font-sans">
+                            If you have any questions about these Terms, please contact us at:
+                        </p>
+                        <div class="bg-zinc-50 p-6 rounded-lg border border-zinc-100">
+                            <p class="text-gray-600 font-sans">
+                                <strong>Email:</strong> <a href="mailto:info@brokerworldcheck.com" class="text-indigo-600 hover:text-indigo-700">info@brokerworldcheck.com</a><br>
+                                <strong>Phone:</strong> +1 234 567 8709<br>
+                                <strong>Address:</strong> 929 E Rosewood Ave, Naperville, IL 60563
+                            </p>
+                        </div>
+
+                        <div role="note" aria-label="Informational notice"
+                            class="my-8 rounded-lg border border-slate-200 border-l-4 border-l-indigo-500 bg-slate-50 px-4 py-3 text-slate-900">
+                            <span class="mr-2">ℹ️</span> Independent financial education and informational platform – not a financial institution or advisor.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (same centered, separated style as reference index) -->
+    <footer class="bg-indigo-800 text-indigo-100 border-t border-indigo-700 font-sans">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="space-y-6 text-center">
+                <div>
+                    <h3 class="text-sm font-semibold uppercase tracking-wider">Legal</h3>
+                    <div class="mt-3 flex flex-wrap justify-center gap-4">
+                        <a href="https://brokerworldcheck.com/privacy-policy/" class="hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="https://brokerworldcheck.com/terms-and-conditions/" class="hover:text-white transition-colors">Terms and Conditions</a>
+                        <a href="https://brokerworldcheck.com/cookie-policy/" class="hover:text-white transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+
+                <div class="h-px bg-fuchsia-800"></div>
+
+                <div>
+                    <h3 class="text-sm font-semibold uppercase tracking-wider">Contact</h3>
+                    <p class="mt-3 text-sm">Email: <a href="mailto:info@brokerworldcheck.com" class="hover:text-white transition-colors">info@brokerworldcheck.com</a></p>
+                    <p class="text-sm">Phone: +1 234 567 8709</p>
+                </div>
+
+                <div class="h-px bg-fuchsia-800"></div>
+
+                <div>
+                    <span class="text-xl font-bold tracking-tight">WORLD CHEER CO LLC</span>
+                    <p>
+                        86-3771961</p>
+                    <p class="mt-2 text-sm">
+                        929 E Rosewood Ave <br>
+                        Naperville, IL 60563
+                    </p>
+                </div>
+
+                <div class="h-px bg-fuchsia-800"></div>
+
+                <div class="bg-fuchsia-950/40 rounded-lg p-4">
+                    <p class="text-sm text-fuchsia-100">
+                        <strong>Compliance & Education Notice:</strong>
+                        Broker World Check provides educational content and tools only. We do not offer financial products or advice and do not facilitate transactions. Always confirm details with licensed professionals before making financial decisions.
+                    </p>
+                </div>
+
+                <p class="text-xs text-fuchsia-200">
+                    &copy; <script>document.write(new Date().getFullYear())</script> Broker World Check. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/mobile-nav.js"></script>
+</body>
+</html>
