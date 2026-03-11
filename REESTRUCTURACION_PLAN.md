@@ -31,8 +31,8 @@ G2_Site_Templatex /G2_Site_Template/ o G2_Site_Templatex
 - Cambiar enlaces relativos a formato `/ruta/` (ej: `about.html` → `/about-us/`)
 - Actualizar rutas de navegación en headers y footers
 - Ajustar rutas de assets (CSS, JS) para estructura de carpetas
-- Actualizar dominio principal en todas las referencias (actual: brokerworldcheck.com)
-- **Agregar dominio completo a URLs de navegación**: Convertir rutas `/ruta/` a `https://brokerworldcheck.com/ruta/`
+- Actualizar dominio principal en todas las referencias (actual: esperar la ruta a ser asignada)
+- **Agregar dominio completo a URLs de navegación**: Convertir rutas `/ruta/` a `ruta esperada por chat`
 
 ### 2. Eliminación de Imágenes
 - **index.html**: Remover imagen de Unsplash en Hero section
@@ -59,11 +59,11 @@ G2_Site_Templatex /G2_Site_Template/ o G2_Site_Templatex
 - Verificar que todas las rutas sean correctas
 
 ### URLs Absolutas vs Relativas
-- **Navegación principal**: usar `https://brokerworldcheck.com/ruta/` (dominio completo)
+- **Navegación principal**: usar `https://esperar la ruta a ser asignada/ruta/` (dominio completo)
 - **Assets**: usar rutas relativas según ubicación (`../assets/` para carpetas, `assets/` para raíz)
 - **Enlaces en footer**: actualizar consistentemente con dominio completo
 - **Dominio principal**: actualizar en enlaces y referencias textuales
-- **Logo/Home**: actualizar a `https://brokerworldcheck.com/`
+- **Logo/Home**: actualizar a `https://esperar la ruta a ser asignada/`
 
 ### Eliminación de Archivos Originales
 - Eliminar archivos HTML originales después de crear versiones en carpetas
@@ -77,7 +77,7 @@ G2_Site_Templatex /G2_Site_Template/ o G2_Site_Templatex
 5. ✅ Imágenes eliminadas/reemplazadas
 6. ✅ Márgenes y layout optimizados
 7. ✅ Navegación consistente en todas las páginas
-8. ✅ Dominios actualizados en URLs de navegación (https://brokerworldcheck.com/)
+8. ✅ Dominios actualizados en URLs de navegación (https://esperar la ruta a ser asignada/)
 
 ## Notas de Implementación
 
@@ -87,21 +87,21 @@ G2_Site_Templatex /G2_Site_Template/ o G2_Site_Templatex
 - Actualizar todos los enlaces de navegación con dominio completo
 
 ### Actualización de URLs con Dominio
-- **Todos los archivos HTML**: Actualizar enlaces de navegación a formato `https://brokerworldcheck.com/ruta/`
+- **Todos los archivos HTML**: Actualizar enlaces de navegación a formato `https://esperar la ruta a ser asignada/ruta/`
 - **Tipos de enlaces actualizados**:
-  - Logo/Home: `href="https://brokerworldcheck.com/"`
-  - About Us: `href="https://brokerworldcheck.com/about-us/"`
-  - Contact Us: `href="https://brokerworldcheck.com/contact-us/"`
-  - Privacy Policy: `href="https://brokerworldcheck.com/privacy-policy/"`
-  - Terms & Conditions: `href="https://brokerworldcheck.com/terms-and-conditions/"`
-  - Cookie Policy: `href="https://brokerworldcheck.com/cookie-policy/"`
+  - Logo/Home: `href="https://esperar la ruta a ser asignada/"`
+  - About Us: `href="https://esperar la ruta a ser asignada/about-us/"`
+  - Contact Us: `href="https://esperar la ruta a ser asignada/contact-us/"`
+  - Privacy Policy: `href="https://esperar la ruta a ser asignada/privacy-policy/"`
+  - Terms & Conditions: `href="https://esperar la ruta a ser asignada/terms-and-conditions/"`
+  - Cookie Policy: `href="https://esperar la ruta a ser asignada/cookie-policy/"`
 - **Verificación**: Eliminar todas las URLs relativas `/` restantes
 
 ### Archivos en Carpetas
 - Mantener contenido textual original
 - Actualizar headers y footers con nuevas URLs (dominio completo)
 - Ajustar rutas de assets a `../assets/`
-- Actualizar enlace del logo a `https://brokerworldcheck.com/`
+- Actualizar enlace del logo a `https://esperar la ruta a ser asignada/`
 
 ### Estilos CSS
 - No modificar archivos CSS existentes
@@ -121,13 +121,13 @@ G2_Site_Templatex /G2_Site_Template/ o G2_Site_Templatex
 ### Comandos Ejecutados
 ```bash
 # Actualizar enlaces de navegación en todos los archivos
-sed -i 's|href="/about-us/"|href="https://brokerworldcheck.com/about-us/"|g' archivo.html
-sed -i 's|href="/contact-us/"|href="https://brokerworldcheck.com/contact-us/"|g' archivo.html
-sed -i 's|href="/privacy-policy/"|href="https://brokerworldcheck.com/privacy-policy/"|g' archivo.html
-sed -i 's|href="/terms-and-conditions/"|href="https://brokerworldcheck.com/terms-and-conditions/"|g' archivo.html
-sed -i 's|href="/cookie-policy/"|href="https://brokerworldcheck.com/cookie-policy/"|g' archivo.html
-sed -i 's|href="../index.html"|href="https://brokerworldcheck.com/"|g' archivo.html
-sed -i 's|href="index.html"|href="https://brokerworldcheck.com/"|g' archivo.html
+sed -i 's|href="/about-us/"|href="https://esperar la ruta a ser asignada/about-us/"|g' archivo.html
+sed -i 's|href="/contact-us/"|href="https://esperar la ruta a ser asignada/contact-us/"|g' archivo.html
+sed -i 's|href="/privacy-policy/"|href="https://esperar la ruta a ser asignada/privacy-policy/"|g' archivo.html
+sed -i 's|href="/terms-and-conditions/"|href="https://esperar la ruta a ser asignada/terms-and-conditions/"|g' archivo.html
+sed -i 's|href="/cookie-policy/"|href="https://esperar la ruta a ser asignada/cookie-policy/"|g' archivo.html
+sed -i 's|href="../index.html"|href="https://esperar la ruta a ser asignada/"|g' archivo.html
+sed -i 's|href="index.html"|href="https://esperar la ruta a ser asignada/"|g' archivo.html
 ```
 
 ### Verificación Final
