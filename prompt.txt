@@ -1,1 +1,63 @@
-Ejecuta el Plan de Reestructuración G2_Site. El dominio destino es [strategicwealthroute.com]. Procesa los archivos según la tabla de mapeo, convierte todas las URLs de navegación a absolutas con el dominio, ajusta los assets según la profundidad de la carpeta y elimina todas las imágenes de Unsplash, centrando el contenido y usando gradientes de Tailwind para compensar el diseño. Al finalizar, elimina los archivos HTML antiguos de la raíz
+Ejecuta el Plan de Reestructuración G2_Site. El dominio destino es [justtopbrokers.com]. Procesa los archivos según la tabla de mapeo, convierte todas las URLs de navegación a absolutas con el dominio, ajusta los assets según la profundidad de la carpeta y elimina todas las imágenes de Unsplash, centrando el contenido y usando gradientes de Tailwind para compensar el diseño. Al finalizar, elimina los archivos HTML antiguos de la raíz
+
+Aquí tienes la lista de dominios de la página `0` a la `27`:
+
+- `0` → `bestbrokerworld.com`
+- `1` → `brokerworldcheck.com`
+- `2` → `internationalbrokersreview.com`
+- `3` → `globalbrokerrank.com`
+- `4` → `topbrokersglobal.com`
+- `5` → `nextmoveinvest.com`
+- `6` → `futureproofinvest.com`
+- `7` → `strategicwealthroute.com`
+- `8` → `thebrokerreview.com`
+- `9` → `justtopbrokers.com`
+- `10` → `perfectbrokermatch.com`
+- `11` → `easybrokercompare.com`
+- `12` → `worldbrokerguide.com`
+- `13` → `brokersinternaational.com`
+- `14` → `smartbrokerspick.com`
+- `15` → `choosebestbrokers.com`
+- `16` → `findtopbrokeers.com`
+- `17` → `yourbestbrokeer.com`
+- `18` → `brokersthatwiin.com`
+- `19` → `trustedbrokerreeview.com`
+- `20` → `brokersreviewed.com`
+- `21` → `futurefundadvisoors.com`
+- `22` → `strategicwealthway.com`
+- `23` → `beyondgaains.com`
+- `24` → `pinnaacleassets.com`
+- `25` → `ascendcaapital.com`
+- `26` → `realtopbrokers.com`
+- `27` → `honestbrokerrank.com`
+
+# ----------------------------------------------------------------------
+# SEGURIDAD: Implementación de Security Headers
+# ----------------------------------------------------------------------
+<IfModule mod_headers.c>
+    # 1. Strict-Transport-Security (HSTS)
+    # Obliga al navegador a usar siempre HTTPS
+    Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+    # 2. X-Content-Type-Options
+    # Evita que el navegador intente adivinar el tipo de contenido (previene ataques MIME)
+    Header set X-Content-Type-Options "nosniff"
+
+    # 3. X-Frame-Options
+    # Evita que tu sitio sea cargado en un iframe (previene Clickjacking)
+    Header set X-Frame-Options "SAMEORIGIN"
+
+    # 4. Referrer-Policy
+    # Controla cuánta información de referencia se envía al salir de tu web
+    Header set Referrer-Policy "no-referrer-when-downgrade"
+
+    # 5. Permissions-Policy
+    # Desactiva funciones del navegador que no usas por seguridad (Cámara, Micro, etc.)
+    Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+
+    # 6. Content-Security-Policy (CSP)
+    # Define qué fuentes de contenido son seguras. 
+    # NOTA: Esta es la más delicada. Si usas scripts externos (como Google Fonts o Analytics), 
+    # asegúrate de que estén permitidos. Esta regla básica es un buen inicio:
+   Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://cdn.tailwindcss.com https://ajax.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:;"
+</IfModule>
