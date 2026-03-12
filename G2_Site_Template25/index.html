@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascend Caapital - Independent Financial Education</title>
+    <meta name="description"
+        content="Ascend Caapital is an independent educational platform focused on improving financial literacy and long-term financial awareness.">
+    <link rel="icon" href="https://ascendcaapital.com/wp-content/uploads/2025/01/cropped-ascende-32x32.png"
+        sizes="32x32" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#030712] text-slate-400 font-light leading-relaxed tracking-wide antialiased">
+
+    <!-- Header -->
+    <header class="backdrop-blur-xl bg-slate-900/60 border-b border-white/5 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-4">
+                    <!-- Education Logo Icon -->
+                    <div
+                        class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center shadow-[0_0_15px_rgba(79,70,229,0.4)]">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                            <path
+                                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.955 11.955 0 0012 20.055a11.955 11.955 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.955 11.955 0 0012 20.055a11.955 11.955 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                        </svg>
+                    </div>
+                    <a href="https://ascendcaapital.com/" class="text-2xl font-bold text-white tracking-tight">Ascend Caapital</a>
+                </div>
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="https://ascendcaapital.com/"
+                        class="text-sm font-semibold text-white hover:text-indigo-400 transition-colors">Home</a>
+                    <a href="https://ascendcaapital.com/about-us/"
+                        class="text-sm font-semibold text-slate-300 hover:text-indigo-400 transition-colors">About
+                        Us</a>
+                    <a href="https://ascendcaapital.com/contact-us/"
+                        class="text-sm font-semibold text-slate-300 hover:text-indigo-400 transition-colors">Contact</a>
+                </nav>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="p-2 text-slate-300 hover:text-white transition-colors">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path id="menu-icon-path" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Navigation Overlay -->
+        <div id="mobile-nav" class="hidden md:hidden backdrop-blur-2xl bg-slate-900/90 border-t border-white/5">
+            <div class="flex flex-col p-6 gap-6">
+                <a href="https://ascendcaapital.com/" class="text-xl font-bold text-white hover:text-indigo-400">Home</a>
+                <a href="https://ascendcaapital.com/about-us/" class="text-xl font-bold text-slate-300 hover:text-indigo-400">About Us</a>
+                <a href="https://ascendcaapital.com/contact-us/" class="text-xl font-bold text-slate-300 hover:text-indigo-400">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto py-12 px-6">
+
+        <!-- Compliance Notice -->
+        <div role="note" aria-label="Informational notice"
+            class="backdrop-blur-xl bg-indigo-500/10 border border-indigo-500/20 rounded-3xl p-6 mb-16 flex items-center gap-4 text-indigo-300 text-sm">
+            <span class="text-2xl">ℹ️</span> Independent financial education and
+            informational platform – not a financial institution or advisor.
+        </div>
+
+        <!-- Hero Section -->
+        <div class="grid grid-cols-1 gap-8 mb-24 items-center max-w-4xl mx-auto">
+            <div class="space-y-10 text-center">
+                <div class="space-y-6">
+                    <h1 class="text-5xl md:text-7xl font-bold text-white leading-tight tracking-tight">
+                        Empowering <span class="text-indigo-500">your</span> financial future
+                    </h1>
+                    <p class="text-xl text-slate-400 leading-relaxed max-w-xl mx-auto">
+                        Ascend Caapital is your trusted independent platform for financial literacy. We clarify
+                        complex money management concepts to help you build valid, long-term wealth strategies.
+                    </p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#features"
+                        class="bg-indigo-600 hover:bg-indigo-500 text-white rounded-2xl px-8 py-4 shadow-[0_0_20px_rgba(79,70,229,0.4)] font-semibold transition-all duration-300 text-lg">
+                        Explore Resources
+                    </a>
+                    <a href="https://ascendcaapital.com/contact-us/"
+                        class="backdrop-blur-xl bg-white/5 hover:bg-white/10 text-white border border-white/10 rounded-2xl px-8 py-4 font-semibold transition-all duration-300 text-lg">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- What We Offer Section -->
+        <div id="features" class="space-y-24 mb-24">
+            <div class="text-center max-w-3xl mx-auto space-y-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-white">
+                    What Does Ascend Caapital Offer?</h2>
+                <p class="text-xl text-indigo-400 font-medium italic">
+                    Unbiased, research-based information to guide your financial journey.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div
+                    class="backdrop-blur-xl bg-slate-900/40 border border-white/10 rounded-[2.5rem] p-10 shadow-2xl hover:bg-slate-800/50 transition-all duration-500 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-3xl font-bold text-white mb-6">Comprehensive Education</h3>
+                        <p class="text-lg text-slate-400 mb-12">
+                            We break down barriers to financial understanding.
+                        </p>
+
+                        <div class="space-y-12">
+                            <div class="flex gap-6">
+                                <div
+                                    class="shrink-0 w-14 h-14 bg-indigo-500/10 rounded-2xl flex items-center justify-center border border-indigo-500/20 text-indigo-400">
+                                    <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 4.168 6.253v13C4.168 19.977 5.754 18.504 7.5 18.504S10.832 19.977 12 19.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 3.332 1.253v13C19.832 19.977 18.247 18.504 16.5 18.504c-1.747 0-3.332.477-3.332 1.253" />
+                                    </svg>
+                                </div>
+                                <div class="space-y-2">
+                                    <h4 class="text-xl font-bold text-white">Education Guides</h4>
+                                    <p class="text-slate-400 leading-relaxed">Budgeting basics, saving habits, and
+                                        investment concepts explained simply. Strictly for learning.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-6">
+                                <div
+                                    class="shrink-0 w-14 h-14 bg-purple-500/10 rounded-2xl flex items-center justify-center border border-purple-500/20 text-purple-400">
+                                    <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                                    </svg>
+                                </div>
+                                <div class="space-y-2">
+                                    <h4 class="text-xl font-bold text-white">Non-Transactional Learning</h4>
+                                    <p class="text-slate-400 leading-relaxed">Explore how financial concepts work in
+                                        theory. No sales, no product pushing.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="backdrop-blur-xl bg-slate-900/40 border border-white/10 rounded-[2.5rem] p-10 shadow-2xl hover:bg-slate-800/50 transition-all duration-500">
+                    <div class="space-y-10">
+                        <div>
+                            <h3 class="text-3xl font-bold text-white mb-6">Objective & Future-Focused</h3>
+                            <p class="text-lg text-slate-400 mb-12">
+                                Planning for tomorrow requires clear thinking today.
+                            </p>
+
+                            <div class="space-y-12">
+                                <div class="flex gap-6">
+                                    <div
+                                        class="shrink-0 w-14 h-14 bg-emerald-500/10 rounded-2xl flex items-center justify-center border border-emerald-500/20 text-emerald-400">
+                                        <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                        </svg>
+                                    </div>
+                                    <div class="space-y-2">
+                                        <h4 class="text-xl font-bold text-white">Independent Insights</h4>
+                                        <p class="text-slate-400 leading-relaxed">Research-based content free from
+                                            sponsorships. We do not endorse any financial institutions.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex gap-6">
+                                    <div
+                                        class="shrink-0 w-14 h-14 bg-indigo-500/10 rounded-2xl flex items-center justify-center border border-indigo-500/20 text-indigo-400">
+                                        <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                                        </svg>
+                                    </div>
+                                    <div class="space-y-2">
+                                        <h4 class="text-xl font-bold text-white">Future-Focused</h4>
+                                        <p class="text-slate-400 leading-relaxed">Emphasizing awareness and planning to
+                                            help you build knowledge that supports thoughtful learning.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Audience Section -->
+        <div class="space-y-12 mb-24">
+            <h2 class="text-4xl md:text-5xl font-bold text-white text-center">Who Is Ascend Caapital For?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="backdrop-blur-xl bg-slate-900/40 border border-white/10 rounded-[2.5rem] p-10 shadow-2xl hover:bg-slate-800/50 transition-all duration-500 group">
+                    <div
+                        class="w-16 h-16 bg-red-500/10 rounded-2xl flex items-center justify-center border border-red-500/20 text-red-500 mb-8 group-hover:scale-110 transition-transform">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 14l9-5-9-5-9 5 9 5z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Students & Beginners</h3>
+                    <p class="text-slate-400">Starting their financial literacy journey with foundational concepts and
+                        clear guidance.</p>
+                </div>
+                <div
+                    class="backdrop-blur-xl bg-slate-900/40 border border-white/10 rounded-[2.5rem] p-10 shadow-2xl hover:bg-slate-800/50 transition-all duration-500 group">
+                    <div
+                        class="w-16 h-16 bg-blue-500/10 rounded-2xl flex items-center justify-center border border-blue-500/20 text-blue-500 mb-8 group-hover:scale-110 transition-transform">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Families</h3>
+                    <p class="text-slate-400">Seeking clear, objective education for household money management and
+                        long-term security.</p>
+                </div>
+                <div
+                    class="backdrop-blur-xl bg-slate-900/40 border border-white/10 rounded-[2.5rem] p-10 shadow-2xl hover:bg-slate-800/50 transition-all duration-500 group">
+                    <div
+                        class="w-16 h-16 bg-amber-500/10 rounded-2xl flex items-center justify-center border border-amber-500/20 text-amber-500 mb-8 group-hover:scale-110 transition-transform">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Entrepreneurs</h3>
+                    <p class="text-slate-400">Improving financial awareness to support their professional growth and
+                        business stability.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transparency Section -->
+        <div class="relative group mb-24">
+            <div
+                class="absolute -inset-1 bg-gradient-to-r from-red-500 to-indigo-600 rounded-[3rem] blur opacity-20 group-hover:opacity-40 transition duration-1000">
+            </div>
+            <div
+                class="relative backdrop-blur-2xl bg-slate-900/60 border border-white/10 rounded-[2.5rem] p-12 lg:p-16 overflow-hidden">
+                <div class="max-w-4xl space-y-8">
+                    <h2 class="text-4xl md:text-5xl font-bold text-white tracking-tight">Our Transparency Commitment
+                    </h2>
+                    <p class="text-xl text-slate-300 leading-relaxed">
+                        Ascend Caapital operates exclusively as an educational and informational resource. We are not a
+                        financial
+                        advisor, broker, intermediary, or service provider. We do not process transactions, recommend
+                        financial
+                        products, or provide personalized financial advice.
+                    </p>
+                    <div class="pt-6">
+                        <a href="https://ascendcaapital.com/about-us/"
+                            class="bg-indigo-600 hover:bg-indigo-500 text-white rounded-2xl px-12 py-5 shadow-[0_0_20px_rgba(79,70,229,0.4)] font-bold transition-all duration-300 text-xl inline-block">
+                            Read our full disclaimer
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div role="note" aria-label="Informational notice"
+            class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-[2rem] p-8 flex items-center gap-6 text-slate-400 font-medium">
+            <span class="text-3xl text-indigo-400">ℹ️</span> Independent financial education and informational platform
+            – not a financial institution or advisor.
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="backdrop-blur-3xl bg-slate-950/80 border-t border-white/5 py-24 px-6 mt-24">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+                <div class="space-y-6">
+                    <span class="text-xl font-bold text-white">ASCEND CAPITAL INC</span>
+                    <p class="text-slate-400 space-y-2 leading-relaxed">
+                        86-2227928<br />
+                        48 Rosewood Trail<br />Deland, FL 32724
+                    </p>
+                </div>
+                <div class="space-y-6">
+                    <h3 class="text-lg font-bold text-white">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="https://ascendcaapital.com/" class="text-slate-400 hover:text-indigo-400 transition-colors">Home</a>
+                        </li>
+                        <li><a href="https://ascendcaapital.com/about-us/" class="text-slate-400 hover:text-indigo-400 transition-colors">About
+                                Us</a></li>
+                        <li><a href="https://ascendcaapital.com/contact-us/"
+                                class="text-slate-400 hover:text-indigo-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-6">
+                    <h3 class="text-lg font-bold text-white">Legal</h3>
+                    <ul class="space-y-3">
+                        <li><a href="https://ascendcaapital.com/privacy-policy/"
+                                class="text-slate-400 hover:text-indigo-400 transition-colors">Privacy Policy</a></li>
+                        <li><a href="https://ascendcaapital.com/terms-and-conditions/" class="text-slate-400 hover:text-indigo-400 transition-colors">Terms
+                                and Conditions</a></li>
+                        <li><a href="https://ascendcaapital.com/cookie-policy/" class="text-slate-400 hover:text-indigo-400 transition-colors">Cookie
+                                Policy</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-6">
+                    <h3 class="text-lg font-bold text-white">Contact</h3>
+                    <div class="space-y-4">
+                        <p class="text-slate-400">Email: <a href="mailto:info@ascendcaapital.com"
+                                class="text-indigo-400 hover:text-indigo-300">info@ascendcaapital.com</a></p>
+                        <p class="text-slate-400">Phone: <span class="text-slate-300">+1 3054979161</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/5 pt-12 flex flex-col md:flex-row justify-between items-start gap-8">
+                <div class="max-w-2xl">
+                    <p class="text-sm text-slate-500 italic leading-relaxed">
+                        <strong>Compliance & Education Notice:</strong> Ascend Caapital provides educational content and
+                        tools
+                        only. We do not offer financial products or advice and do not facilitate transactions. Always
+                        confirm details with licensed professionals before making financial decisions.
+                    </p>
+                </div>
+                <p class="text-sm text-slate-500">
+                    &copy;
+                    <script>document.write(new Date().getFullYear())</script> Ascend Caapital. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileNav = document.getElementById('mobile-nav');
+        const menuIconPath = document.getElementById('menu-icon-path');
+
+        mobileMenuButton.addEventListener('click', () => {
+            const isHidden = mobileNav.classList.contains('hidden');
+            if (isHidden) {
+                mobileNav.classList.remove('hidden');
+                menuIconPath.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+            } else {
+                mobileNav.classList.add('hidden');
+                menuIconPath.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            }
+        });
+    </script>
+</body>
+
+</html>
