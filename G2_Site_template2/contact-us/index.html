@@ -128,10 +128,7 @@
                     <h2 class="text-lg font-semibold text-slate-900">
                         Send us a Message
                     </h2>
-                    <form id="contactForm" class="mt-4 space-y-4" onsubmit="
-                                event.preventDefault();
-                                showSuccessPopup();
-                            " aria-describedby="formStatus" novalidate>
+                    <form id="contactForm" class="mt-4 space-y-4" onsubmit="if (!this.checkValidity()) { this.reportValidity(); return false; } event.preventDefault(); showSuccessPopup();" aria-describedby="formStatus">
                         <div>
                             <label for="name" class="block text-sm font-medium text-slate-700">Name</label>
                             <input id="name" name="name" type="text" required placeholder="Your Name"
@@ -147,7 +144,7 @@
                         <div>
                             <label for="subject" class="block text-sm font-medium text-slate-700">Subject</label>
                             <input id="subject" name="subject" type="text" placeholder="Topic"
-                                class="mt-1 block w-full border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-300" />
+                                class="mt-1 block w-full border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-300" required>
                         </div>
 
                         <div>

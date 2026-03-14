@@ -38,7 +38,7 @@
                     <a href="https://thebrokerreview.com/contact-us/" class="hover:text-stone-600 transition-colors duration-700">Contact</a>
                 </nav>
                 <!-- Mobile Menu Toggle -->
-                <input type="checkbox" id="menu-toggle" class="hidden">
+                <input type="checkbox" id="menu-toggle" class="hidden" required>
                 <label for="menu-toggle" class="md:hidden cursor-pointer">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -142,19 +142,19 @@ APT 2704, Miami, FL 33131</p>
                     <form id="contactForm" onsubmit="event.preventDefault(); showSuccessPopup();" action="#" method="POST" class="space-y-6">
                         <div>
                             <label for="name" class="block text-sm font-semibold mb-2">Name</label>
-                            <input type="text" name="name" id="name" placeholder="Your Name" class="w-full border-b border-stone-200 bg-transparent py-2 focus:border-stone-800 outline-none transition-colors duration-700" />
+                            <input type="text" name="name" id="name" placeholder="Your Name" class="w-full border-b border-stone-200 bg-transparent py-2 focus:border-stone-800 outline-none transition-colors duration-700" required>
                         </div>
                         <div>
                             <label for="email" class="block text-sm font-semibold mb-2">Email</label>
-                            <input type="email" name="email" id="email" placeholder="you@example.com" class="w-full border-b border-stone-200 bg-transparent py-2 focus:border-stone-800 outline-none transition-colors duration-700" />
+                            <input type="email" name="email" id="email" placeholder="you@example.com" class="w-full border-b border-stone-200 bg-transparent py-2 focus:border-stone-800 outline-none transition-colors duration-700" required>
                         </div>
                         <div>
                             <label for="subject" class="block text-sm font-semibold mb-2">Subject</label>
-                            <input type="text" name="subject" id="subject" placeholder="Topic" class="w-full border-b border-stone-200 bg-transparent py-2 focus:border-stone-800 outline-none transition-colors duration-700" />
+                            <input type="text" name="subject" id="subject" placeholder="Topic" class="w-full border-b border-stone-200 bg-transparent py-2 focus:border-stone-800 outline-none transition-colors duration-700" required>
                         </div>
                         <div>
                             <label for="message" class="block text-sm font-semibold mb-2">Message</label>
-                            <textarea name="message" id="message" rows="4" placeholder="Your message here..." class="w-full border-b border-stone-200 bg-transparent py-2 focus:border-stone-800 outline-none transition-colors duration-700 resize-none"></textarea>
+                            <textarea name="message" id="message" rows="4" placeholder="Your message here..." class="w-full border-b border-stone-200 bg-transparent py-2 focus:border-stone-800 outline-none transition-colors duration-700 resize-none" required></textarea>
                         </div>
                         <div>
                             <button type="submit" class="font-playfair text-lg tracking-widest border-b border-stone-800 pb-1 hover:border-stone-600 transition-colors duration-700">Send Message</button>

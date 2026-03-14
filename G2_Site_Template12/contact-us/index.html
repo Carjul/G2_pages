@@ -119,19 +119,19 @@ MIAMI, FL 33131</p>
                     <form id="contactForm" onsubmit="event.preventDefault(); showSuccessPopup();" action="#" method="POST" class="space-y-4">
                         <div class="border-2 border-stone-400 p-2">
                             <label for="name" class="block text-sm font-bold uppercase">Name</label>
-                            <input type="text" name="name" id="name" placeholder="Your Name" class="w-full bg-transparent border-none outline-none" />
+                            <input type="text" name="name" id="name" placeholder="Your Name" class="w-full bg-transparent border-none outline-none" required>
                         </div>
                         <div class="border-2 border-stone-400 p-2">
                             <label for="email" class="block text-sm font-bold uppercase">Email</label>
-                            <input type="email" name="email" id="email" placeholder="you@example.com" class="w-full bg-transparent border-none outline-none" />
+                            <input type="email" name="email" id="email" placeholder="you@example.com" class="w-full bg-transparent border-none outline-none" required>
                         </div>
                         <div class="border-2 border-stone-400 p-2">
                             <label for="subject" class="block text-sm font-bold uppercase">Subject</label>
-                            <input type="text" name="subject" id="subject" placeholder="Topic" class="w-full bg-transparent border-none outline-none" />
+                            <input type="text" name="subject" id="subject" placeholder="Topic" class="w-full bg-transparent border-none outline-none" required>
                         </div>
                         <div class="border-2 border-stone-400 p-2">
                             <label for="message" class="block text-sm font-bold uppercase">Message</label>
-                            <textarea name="message" id="message" rows="4" placeholder="Your message here..." class="w-full bg-transparent border-none outline-none"></textarea>
+                            <textarea name="message" id="message" rows="4" placeholder="Your message here..." class="w-full bg-transparent border-none outline-none" required></textarea>
                         </div>
                         <div>
                             <button type="submit" class="border-2 border-stone-400 px-4 py-2 text-sm md:text-lg font-black uppercase rounded-none">Send Message</button>
