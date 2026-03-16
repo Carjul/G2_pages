@@ -8,70 +8,80 @@
     <meta name="description" content="Learn about 123456, an independent platform for financial education." />
     <link rel="icon"
         href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563EB' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 21h18M5 21V7l8-4 8 4v14'/%3E%3C/svg%3E" />
-    <link rel="stylesheet" href="../style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = {theme: {extend: {boxShadow: {'citrus': '0 4px 14px rgba(249,115,22,0.3)'}}}};</script>
 </head>
 
-<body>
+<body class="bg-white min-h-screen antialiased text-slate-800 p-6 md:p-12">
     <!-- Header -->
-    <header class="header-main">
-        <div class="header-wrapper">
-            <div class="header-content">
-                <div class="header-logo-nav">
-                    <!-- Education Logo Icon -->
-                    <div class="header-logo-icon">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <header>
+        <div class="max-w-7xl mx-auto">
+            <div class="flex items-center justify-between gap-8">
+                <div class="flex items-center gap-4">
+                    <a href="/" class="flex items-center gap-3 no-underline">
+                        <div class="header-logo-icon w-10 h-10 flex items-center justify-center rounded-lg bg-orange-50 text-orange-600 shadow-sm" aria-hidden="true">
+                            <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path d="M12 14l9-5-9-5-9 5 9 5z" />
                             <path
                                 d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.955 11.955 0 0012 20.055a11.955 11.955 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.955 11.955 0 0012 20.055a11.955 11.955 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
-                        </svg>
-                    </div>
-                    <a href="/" class="header-brand">123456</a>
+                        </svg>                                                                  
+                        </div>
+                        <span class="text-slate-900 text-lg font-extrabold tracking-tighter">123456</span>
+                    </a>
                 </div>
                 <!-- Desktop Nav -->
-                <nav class="header-nav-desktop">
-                    <a href="/" class="nav-link">Home</a>
-                    <a href="/about-us/" class="nav-link">About Us</a>
-                    <a href="/contact-us/" class="nav-link">Contact</a>
+                <nav class="hidden md:flex gap-6 items-center">
+                    <a href="/" class="text-slate-700 hover:text-slate-900 font-medium flex items-center gap-2">
+                        <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M3 11.5L12 4l9 7.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1V11.5z" />
+                        </svg>
+                        <span>Home</span>
+                    </a>
+                    <a href="/about-us/" class="text-slate-700 hover:text-slate-900 font-medium flex items-center gap-2">
+                        <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z" />
+                            <path d="M6 20v-1c0-2.21 3.58-4 6-4s6 1.79 6 4v1" />
+                        </svg>
+                        <span>About Us</span>
+                    </a>
+                    <a href="/contact-us/" class="text-slate-700 hover:text-slate-900 font-medium flex items-center gap-2">
+                        <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8" />
+                            <path d="M21 8v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8" />
+                        </svg>
+                        <span>Contact</span>
+                    </a>
                 </nav>
                 <!-- Mobile Menu Button -->
-                <div class="header-mobile-menu-btn">
-                    <button id="mobile-menu-button" class="menu-toggle-btn">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path id="menu-icon-path" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="p-2 text-black bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500" aria-label="Toggle mobile menu">
+                       Menu
                     </button>
                 </div>
             </div>
         </div>
         <!-- Mobile Navigation Overlay -->
-        <div id="mobile-nav" class="header-nav-mobile hidden">
-            <div class="mobile-nav-links">
-                <a href="/" class="mobile-nav-link">Home</a>
-                <a href="/about-us/" class="mobile-nav-link">About Us</a>
-                <a href="/contact-us/" class="mobile-nav-link">Contact</a>
+        <div id="mobile-nav" class="hidden md:hidden">
+            <div class="flex flex-col gap-3 p-4">
+                <a href="/" class="block px-4 py-2 rounded-lg text-slate-700 bg-slate-50 flex items-center gap-2"><svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M3 11.5L12 4l9 7.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1V11.5z"/></svg>Home</a>
+                <a href="/about-us/" class="block px-4 py-2 rounded-lg text-slate-700 bg-slate-50 flex items-center gap-2"><svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z"/><path d="M6 20v-1c0-2.21 3.58-4 6-4s6 1.79 6 4v1"/></svg>About Us</a>
+                <a href="/contact-us/" class="block px-4 py-2 rounded-lg text-slate-700 bg-slate-50 flex items-center gap-2"><svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8"/><path d="M21 8v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8"/></svg>Contact</a>
             </div>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="main-container">
-        <!-- Compliance Notice -->
-        <div class="compliance-notice" role="note" aria-label="Informational notice">
-            <div class="compliance-notice-wrapper">
-                <span class="compliance-icon">ℹ️</span>
-                <span class="compliance-text">Independent financial education and informational platform – not a financial institution or advisor.</span>
-            </div>
-        </div>
+    <main class="max-w-5xl mx-auto mt-8 space-y-8">
+        <div class="bg-white border border-slate-100 rounded-3xl shadow-sm p-4 md:p-6 text-slate-600">ℹ️ Independent financial education and informational platform – not a financial institution or advisor.</div>
 
         <!-- Header Banner -->
         <div class="about-hero-section">
             <div class="about-hero-container">
                 <div class="about-hero-content">
-                    <h1 class="about-hero-title">About Us</h1>
-                    <p class="about-hero-subtitle">Our mission is to make financial concepts clear, accessible, and easy to understand for everyone.</p>
+                    <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900">About Us</h1>
+                    <p class="mt-3 text-slate-600">Our mission is to make financial concepts clear, accessible, and easy to understand for everyone.</p>
                 </div>
             </div>
             <!-- Decorative bg pattern -->
@@ -79,102 +89,38 @@
         </div>
 
         <!-- Main Content Sections -->
-        <div class="about-main-content">
+        <div class="about-main-content space-y-8">
             <!-- Who We Are Section -->
-            <section class="about-section about-section-who">
-                <h2 class="about-section-title">Who We Are</h2>
-                <div class="about-section-content">
-                    <p>
-                        123456 is an independent educational
-                        platform dedicated to improving financial literacy
-                        and long-term financial awareness. Our mission is to
-                        make financial concepts clear, accessible, and easy
-                        to understand—helping individuals, families, and
-                        professionals build a stronger understanding of
-                        money management and future-focused financial
-                        thinking.
-                    </p>
-                    <p>
-                        We believe that financial education is essential for
-                        developing confidence and awareness over time.
-                        That's why our content is designed to simplify
-                        complex financial topics into clear, objective, and
-                        easy-to-follow educational materials.
-                    </p>
+            <section class="card">
+                <h2 class="text-xl font-extrabold text-slate-900">Who We Are</h2>
+                <div class="mt-3 text-slate-600 leading-relaxed">
+                    <p>123456 is an independent educational platform dedicated to improving financial literacy and long-term financial awareness. Our mission is to make financial concepts clear, accessible, and easy to understand—helping individuals, families, and professionals build a stronger understanding of money management and future-focused financial thinking.</p>
+                    <p>We believe that financial education is essential for developing confidence and awareness over time. That's why our content is designed to simplify complex financial topics into clear, objective, and easy-to-follow educational materials.</p>
                 </div>
             </section>
 
             <!-- What We Do Section -->
-            <section class="about-section about-section-what">
-                <h2 class="about-section-title">What We Do</h2>
-                <div class="about-section-content">
-                    <p>
-                        At 123456, we provide educational
-                        content and informational resources created to
-                        support learning—not to promote or facilitate
-                        financial services. Our platform includes:
-                    </p>
-                    <ul class="about-list">
-                        <li class="about-list-item">
-                            <strong>Financial Education Guides</strong> –
-                            covering budgeting fundamentals, saving habits,
-                            financial awareness, and introductory investment
-                            concepts.
-                        </li>
-                        <li class="about-list-item">
-                            <strong>Informational Learning Resources</strong>
-                            – designed to help users explore financial ideas
-                            in a general, non-transactional, educational
-                            context.
-                        </li>
-                        <li class="about-list-item">
-                            <strong>Independent Insights</strong> –
-                            developed through research and analysis, free
-                            from sponsorships, endorsements, or commercial
-                            influence.
-                        </li>
-                        <li class="about-list-item">
-                            <strong>Global Perspective</strong> – offering
-                            educational explanations that apply broadly
-                            while acknowledging differences across financial
-                            systems and regions.
-                        </li>
+            <section class="card">
+                <h2 class="text-xl font-extrabold text-slate-900">What We Do</h2>
+                <div class="mt-3 text-slate-600 leading-relaxed">
+                    <p>At 123456, we provide educational content and informational resources created to support learning—not to promote or facilitate financial services. Our platform includes:</p>
+                    <ul class="mt-4 space-y-3">
+                        <li class="bg-white border border-slate-100 rounded-3xl p-4"> <strong class="text-slate-900">Financial Education Guides</strong> – covering budgeting fundamentals, saving habits, financial awareness, and introductory investment concepts.</li>
+                        <li class="bg-white border border-slate-100 rounded-3xl p-4"> <strong class="text-slate-900">Informational Learning Resources</strong> – designed to help users explore financial ideas in a general, non-transactional, educational context.</li>
+                        <li class="bg-white border border-slate-100 rounded-3xl p-4"> <strong class="text-slate-900">Independent Insights</strong> – developed through research and analysis, free from sponsorships, endorsements, or commercial influence.</li>
+                        <li class="bg-white border border-slate-100 rounded-3xl p-4"> <strong class="text-slate-900">Global Perspective</strong> – offering educational explanations that apply broadly while acknowledging differences across financial systems and regions.</li>
                     </ul>
                 </div>
             </section>
 
             <!-- Who We Serve Section -->
-            <section class="about-section about-section-serve">
-                <h2 class="about-section-title">Who We Serve</h2>
-                <div class="about-serve-grid">
-                    <div class="about-serve-card">
-                        <div class="about-serve-number">1</div>
-                        <p class="about-serve-text">
-                            Individuals beginning their financial literacy
-                            journey
-                        </p>
-                    </div>
-                    <div class="about-serve-card">
-                        <div class="about-serve-number">2</div>
-                        <p class="about-serve-text">
-                            Families seeking clear and objective financial
-                            education
-                        </p>
-                    </div>
-                    <div class="about-serve-card">
-                        <div class="about-serve-number">3</div>
-                        <p class="about-serve-text">
-                            Students and young adults learning foundational
-                            money concepts
-                        </p>
-                    </div>
-                    <div class="about-serve-card">
-                        <div class="about-serve-number">4</div>
-                        <p class="about-serve-text">
-                            Freelancers and entrepreneurs wanting general
-                            financial awareness
-                        </p>
-                    </div>
+            <section>
+                <h2 class="text-xl font-extrabold text-slate-900">Who We Serve</h2>
+                <div class="grid md:grid-cols-4 gap-4 mt-4">
+                    <div class="bg-white border border-slate-100 rounded-3xl p-4 text-center"> <div class="w-10 h-10 rounded-full bg-orange-500 text-white mx-auto flex items-center justify-center font-bold">1</div><p class="mt-3 text-slate-600">Individuals beginning their financial literacy journey</p></div>
+                    <div class="bg-white border border-slate-100 rounded-3xl p-4 text-center"> <div class="w-10 h-10 rounded-full bg-orange-500 text-white mx-auto flex items-center justify-center font-bold">2</div><p class="mt-3 text-slate-600">Families seeking clear and objective financial education</p></div>
+                    <div class="bg-white border border-slate-100 rounded-3xl p-4 text-center"> <div class="w-10 h-10 rounded-full bg-orange-500 text-white mx-auto flex items-center justify-center font-bold">3</div><p class="mt-3 text-slate-600">Students and young adults learning foundational money concepts</p></div>
+                    <div class="bg-white border border-slate-100 rounded-3xl p-4 text-center"> <div class="w-10 h-10 rounded-full bg-orange-500 text-white mx-auto flex items-center justify-center font-bold">4</div><p class="mt-3 text-slate-600">Freelancers and entrepreneurs wanting general financial awareness</p></div>
                 </div>
             </section>
 
@@ -203,84 +149,56 @@
             </section>
 
             <!-- Let's Connect Section -->
-            <div class="about-connect-section">
-                <h3 class="about-connect-title">Let's Connect</h3>
-                <p class="about-connect-subtitle">Questions? Partnerships? Media inquiries?</p>
-                <div class="about-connect-info">
-                    <p class="about-connect-item">
-                        Email:
-                        <a href="mailto:info@realtopbrokers.com" class="about-connect-link">info@realtopbrokers.com</a>
-                    </p>
-                    <p class="about-connect-item">Phone: +1 256 935 8591</p>
+            <div class="card">
+                <h3 class="text-lg font-extrabold text-slate-900">Let's Connect</h3>
+                <p class="text-slate-600 mt-2">Questions? Partnerships? Media inquiries?</p>
+                <div class="mt-4 text-slate-600">
+                    <p>Email: <a href="mailto:info@realtopbrokers.com" class="text-slate-700">info@realtopbrokers.com</a></p>
+                    <p class="mt-1">Phone: +1 256 935 8591</p>
                 </div>
-                <div class="compliance-notice" role="note" aria-label="Informational notice">
-                    <div class="compliance-notice-wrapper">
-                        <span class="compliance-icon">ℹ️</span>
-                        <span class="compliance-text">Independent financial education and informational platform – not a financial institution or advisor.</span>
-                    </div>
-                </div>
+            </div>
+        </div>
+         <div class="compliance-notice-wrapper">
+            <div role="note" aria-label="Informational notice" class="compliance-notice">
+                <span class="compliance-icon">ℹ️</span>
+                <span class="compliance-text">Independent financial education and informational platform – not a financial
+                institution or advisor.</span>
             </div>
         </div>
     </main>
 
-    <footer class="footer-main">
-        <div class="footer-wrapper">
-            <div class="footer-top">
-                <div class="footer-col footer-col-company">
-                    <span class="footer-company-name">GLOBAL REACH ASSIST LLC</span>
-                    <p class="footer-company-info">
-                        85-0497889<br />
-                        9250 NW 25TH STREET<br />
-                        DORAL, FL 33172
-                    </p>
+    <footer class="border-t border-slate-200 mt-12">
+        <div class="max-w-7xl mx-auto py-8">
+            <div class="grid md:grid-cols-4 gap-6 pb-6 border-b border-slate-100">
+                <div>
+                    <span class="block text-sm font-bold text-slate-900">GLOBAL REACH ASSIST LLC</span>
+                    <p class="text-sm text-slate-600 mt-2">85-0497889<br>9250 NW 25TH STREET<br>DORAL, FL 33172</p>
                 </div>
-                <div class="footer-col">
-                    <h3 class="footer-col-title">Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="/" class="footer-link">Home</a></li>
-                        <li><a href="/about-us/" class="footer-link">About Us</a></li>
-                        <li><a href="/contact-us/" class="footer-link">Contact</a></li>
+                <div>
+                    <h3 class="text-sm font-semibold text-slate-900">Quick Links</h3>
+                    <ul class="mt-2 space-y-1 text-sm">
+                        <li><a href="/" class="text-slate-600 hover:text-slate-900">Home</a></li>
+                        <li><a href="/about-us/" class="text-slate-600 hover:text-slate-900">About Us</a></li>
+                        <li><a href="/contact-us/" class="text-slate-600 hover:text-slate-900">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h3 class="footer-col-title">Legal</h3>
-                    <ul class="footer-links">
-                        <li><a href="/privacy-policy/" class="footer-link">Privacy Policy</a></li>
-                        <li>
-                            <a href="/terms-and-conditions/" class="footer-link">Terms and Conditions</a>
-                        </li>
-                        <li><a href="/cookie-policy/" class="footer-link">Cookie Policy</a></li>
+                <div>
+                    <h3 class="text-sm font-semibold text-slate-900">Legal</h3>
+                    <ul class="mt-2 space-y-1 text-sm">
+                        <li><a href="/privacy-policy/" class="text-slate-600 hover:text-slate-900">Privacy Policy</a></li>
+                        <li><a href="/terms-and-conditions/" class="text-slate-600 hover:text-slate-900">Terms and Conditions</a></li>
+                        <li><a href="/cookie-policy/" class="text-slate-600 hover:text-slate-900">Cookie Policy</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h3 class="footer-col-title">Contact</h3>
-                    <div class="footer-contact-info">
-                        <p>
-                            Email:
-                            <a href="mailto:info@realtopbrokers.com" class="footer-link">info@realtopbrokers.com</a>
-                        </p>
-                        <p>Phone: +1 256 935 8591</p>
-                    </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-slate-900">Contact</h3>
+                    <p class="text-sm text-slate-600 mt-2">Email: <a href="mailto:info@realtopbrokers.com" class="text-slate-600 hover:text-slate-900">info@realtopbrokers.com</a></p>
+                    <p class="text-sm text-slate-600">Phone: +1 256 935 8591</p>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <div class="footer-compliance">
-                    <p class="footer-compliance-text">
-                        <strong>Compliance & Education Notice:</strong>
-                        123456 provides educational content and
-                        tools only. We do not offer financial products or
-                        advice and do not facilitate transactions. Always
-                        confirm details with licensed professionals before
-                        making financial decisions.
-                    </p>
-                </div>
-                <p class="footer-copyright">
-                    &copy;
-                    <script>
-                        document.write(new Date().getFullYear());
-                    </script>
-                    123456. All rights reserved.
-                </p>
+            <div class="pt-6 text-center text-sm text-slate-600">
+                <p class="mb-2"><strong class="text-slate-900">Compliance & Education Notice:</strong> 123456 provides educational content and tools only. We do not offer financial products or advice and do not facilitate transactions. Always confirm details with licensed professionals before making financial decisions.</p>
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> 123456. All rights reserved.</p>
             </div>
         </div>
     </footer>

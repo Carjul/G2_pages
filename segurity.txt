@@ -1,35 +1,3 @@
-Ejecuta el Plan de Reestructuración G2_Site. El dominio destino es [justtopbrokers.com]. Procesa los archivos según la tabla de mapeo, convierte todas las URLs de navegación a absolutas con el dominio, ajusta los assets según la profundidad de la carpeta y elimina todas las imágenes de Unsplash, centrando el contenido y usando gradientes de Tailwind para compensar el diseño. Al finalizar, elimina los archivos HTML antiguos de la raíz
-
-Aquí tienes la lista de dominios de la página `0` a la `27`:
-
-- `0` → `bestbrokerworld.com`
-- `1` → `brokerworldcheck.com`
-- `2` → `internationalbrokersreview.com`
-- `3` → `globalbrokerrank.com`
-- `4` → `topbrokersglobal.com`
-- `5` → `nextmoveinvest.com`
-- `6` → `futureproofinvest.com`
-- `7` → `strategicwealthroute.com`
-- `8` → `thebrokerreview.com`
-- `9` → `justtopbrokers.com`
-- `10` → `perfectbrokermatch.com`
-- `11` → `easybrokercompare.com`
-- `12` → `worldbrokerguide.com`
-- `13` → `brokersinternaational.com`
-- `14` → `smartbrokerspick.com`
-- `15` → `choosebestbrokers.com`
-- `16` → `findtopbrokeers.com`
-- `17` → `yourbestbrokeer.com`
-- `18` → `brokersthatwiin.com`
-- `19` → `trustedbrokerreeview.com`
-- `20` → `brokersreviewed.com`
-- `21` → `futurefundadvisoors.com`
-- `22` → `strategicwealthway.com`
-- `23` → `beyondgaains.com`
-- `24` → `pinnaacleassets.com`
-- `25` → `ascendcaapital.com`
-- `26` → `realtopbrokers.com`
-- `27` → `honestbrokerrank.com`
 
 # ----------------------------------------------------------------------
 # SEGURIDAD: Implementación de Security Headers
