@@ -1,7 +1,7 @@
 # Script para crear una carpeta y copiar archivos desde la plantilla '1'
 
 # Nombre de la carpeta
-$folderName = "G2_Site_Template28"
+$folderName = "G2_Site_Template29"
 $templatePath = "1\1"
 
 # Crear la carpeta si no existe
