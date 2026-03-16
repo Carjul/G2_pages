@@ -75,7 +75,10 @@ def upload_dir(sftp, local_root: Path, remote_root: str):
 
 
 def main():
+    # prefer plaintext creds file without extension; fallback to 'ssh sftp.txt'
     creds_file = Path('ssh sftp')
+    if not creds_file.exists():
+        creds_file = Path('ssh sftp.txt')
     try:
         data = parse_credentials(creds_file, 'G2_Site_Template28')
     except Exception as e:

@@ -56,7 +56,7 @@
 
                 <!-- Mobile menu button -->
                 <div class="md:hidden flex items-center">
-                    <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"
+                    <button id="mobile-menu-button" type="button"
                         class="text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-emerald-500 p-2 rounded-md">
                         <span class="sr-only">Open main menu</span>
                         <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -81,6 +81,15 @@
             </div>
         </div>
     </header>
+    <script>
+        // Mobile menu toggle (safe binding)
+        (function () {
+            const btn = document.getElementById('mobile-menu-button');
+            const menu = document.getElementById('mobile-menu');
+            if (!btn || !menu) return;
+            btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+        })();
+    </script>
 
     <!-- Main Content -->
     <main class="flex-grow">
@@ -301,20 +310,29 @@
     <script>
         function showSuccessPopup() {
             const popup = document.getElementById('successPopup');
+            if (!popup) return;
             popup.classList.remove('hidden');
-            document.getElementById('contactForm').reset();
+            const form = document.getElementById('contactForm');
+            if (form) form.reset();
         }
 
-        document.getElementById('okBtn').addEventListener('click', function () {
-            document.getElementById('successPopup').classList.add('hidden');
-        });
+        const okBtn = document.getElementById('okBtn');
+        if (okBtn) {
+            okBtn.addEventListener('click', function () {
+                const popup = document.getElementById('successPopup');
+                if (popup) popup.classList.add('hidden');
+            });
+        }
 
         // Close on click outside
-        document.getElementById('successPopup').addEventListener('click', function (e) {
-            if (e.target === this) {
-                this.classList.add('hidden');
-            }
-        });
+        const successPopup = document.getElementById('successPopup');
+        if (successPopup) {
+            successPopup.addEventListener('click', function (e) {
+                if (e.target === this) {
+                    this.classList.add('hidden');
+                }
+            });
+        }
     </script>
 </body>
 
