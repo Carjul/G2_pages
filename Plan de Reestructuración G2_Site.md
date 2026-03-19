@@ -12,11 +12,11 @@
 
 | Archivo Fuente (Raíz) | Directorio Destino | Archivo Final |
 | :--- | :--- | :--- |
-| `about.html` | `/about-us/` | [cite_start]`index.html`  |
-| `contact.html` | `/contact-us/` | [cite_start]`index.html`  |
-| `privacy.html` | `/privacy-policy/` | [cite_start]`index.html`  |
-| `terms.html` | `/terms-and-conditions/` | [cite_start]`index.html`  |
-| `cookies.html` | `/cookie-policy/` | [cite_start]`index.html`  |
+| `about.html` | `/about-us/` | `index.html`  |
+| `contact.html` | `/contact-us/` | `index.html`  |
+| `privacy.html` | `/privacy-policy/` | `index.html`  |
+| `terms.html` | `/terms-and-conditions/` | `index.html`  |
+| `cookies.html` | `/cookie-policy/` | `index.html`  |
 
 ## 4. Reglas de Transformación de Contenido
 
